@@ -69,7 +69,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_FIRE" 		"0"
-			"DAMAGE_SUBTYPE_WATER" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 		"50"
 		}
 	}
 
@@ -468,20 +468,19 @@
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttackRange"			"300"
 		"AttackRate"			"1.9"
-		"AttributeBaseStrength"	"24"
-		"AttributeBaseIntelligence"	"28"
-		"AttributeBaseAgility"	"20"
-		"AttributeStrengthGain"	"2.2"
-		"AttributeIntelligenceGain"	"1.7"
-		"AttributeAgilityGain"	"2.9"
-		"AttackDamageMin"		"30"
-		"AttackDamageMax"		"35"
-		"MovementSpeed"			"270"
+		"AttributeBaseStrength"	"40"
+		"AttributeBaseIntelligence"	"10"
+		"AttributeBaseAgility"	"30"
+		"AttributeStrengthGain"	"2.24"
+		"AttributeIntelligenceGain"	"1.25"
+		"AttributeAgilityGain"	"2.5"
+		"AttackDamageMin"		"10"
+		"AttackDamageMax"		"15"
 
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"-25"
-			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+			"DAMAGE_SUBTYPE_DARK" 	"25"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-50"
 		}
 	}
 
@@ -501,14 +500,14 @@
 		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttackRange"			"80"
 		"AttackRate"			"2"
-		"AttributeBaseStrength"	"27"
-		"AttributeBaseIntelligence"	"14"
-		"AttributeBaseAgility"	"16"
-		"AttributeStrengthGain"	"3"
-		"AttributeIntelligenceGain"	"2.3"
-		"AttributeAgilityGain"	"2.2"
-		"AttackDamageMin"		"23"
-		"AttackDamageMax"		"30"
+		"AttributeBaseStrength"	"30"
+		"AttributeBaseIntelligence"	"15"
+		"AttributeBaseAgility"	"10"
+		"AttributeStrengthGain"	"2.25"
+		"AttributeIntelligenceGain"	"1.0"
+		"AttributeAgilityGain"	"1.0"
+		"AttackDamageMin"		"32"
+		"AttackDamageMax"		"60"
 		"MagicalResistance"		"40"
 	}
 

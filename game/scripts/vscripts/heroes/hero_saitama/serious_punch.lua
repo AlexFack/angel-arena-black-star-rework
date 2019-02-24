@@ -1,16 +1,51 @@
+LinkLuaModifier("modifier_saitama_serious_punch_stun", "heroes/hero_saitama/serious_punch.lua", LUA_MODIFIER_MOTION_NONE)
+
 saitama_serious_punch = class({})
+
+modifier_saitama_serious_punch_stun = class({
+	IsDebuff      = function() return true end,
+	IsPurgable    = function() return false end,
+})
+
+function modifier_saitama_serious_punch_stun:CheckState()
+	return {
+		[MODIFIER_STATE_STUNNED] = true
+	}
+end
 
 if IsServer() then
 	function saitama_serious_punch:OnSpellStart()
 		local caster = self:GetCaster()
 		local target = self:GetCursorTarget()
-		if not target:TriggerSpellAbsorb(self) then
-			target:TriggerSpellReflect(self)
-			local damage = caster:GetAverageTrueAttackDamage(target) * (self:GetSpecialValueFor("base_damage_multiplier_pct") + self:GetSpecialValueFor("damage_multiplier_per_stack_pct") * caster:GetModifierStackCount("modifier_saitama_limiter", caster)) * 0.01
+		local damage = caster:GetAverageTrueAttackDamage(target) * self:GetSpecialValueFor("damage_multiplier") * 0.01
+		local duration =  self:GetSpecialValueFor("stun_duration")
+		local permaKill = false
 
-			target:EmitSound("Hero_Earthshaker.EchoSlam")
-			ParticleManager:CreateParticle("particles/econ/items/earthshaker/egteam_set/hero_earthshaker_egset/earthshaker_echoslam_start_fallback_mid_egset.vpcf", PATTACH_ABSORIGIN, target)
+		if RollPercentage(self:GetSpecialValueFor("momental_kill_chance")) then
+			permaKill = true
+		end
 
+		target:EmitSound("Hero_Earthshaker.EchoSlam")
+		ParticleManager:CreateParticle("particles/econ/items/earthshaker/egteam_set/hero_earthshaker_egset/earthshaker_echoslam_start_fallback_mid_egset.vpcf", PATTACH_ABSORIGIN, target)
+
+		if not permaKill then
+			local cleaveDistance = self:GetSpecialValueFor("default_cleave_radius") + caster:GetAverageTrueAttackDamage(target) * self:GetSpecialValueFor("damage_in_cleave_radius_pct") * 0.01
+
+			DoCleaveAttack(
+				caster,
+				target,
+				self,
+				damage * self:GetSpecialValueFor("damage_in_cleave_radius_pct") * 0.01,
+				cleaveDistance,
+				100,
+				cleaveDistance,
+				self.cleave_pfx
+			)	
+		end
+		
+		if caster:GetTeamNumber() == target:GetTeamNumber() then
+			target:AddNewModifier(caster, self, "modifier_saitama_serious_punch_stun", {duration = ability:GetSpecialValueFor("stun_duration_for_ally")})
+		elseif not permaKill then
 			ApplyDamage({
 				attacker = caster,
 				victim = target,
@@ -18,24 +53,11 @@ if IsServer() then
 				damage_type = self:GetAbilityDamageType(),
 				damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
 				ability = self
-			})
+			})	
 
-			target:RemoveModifierByName("modifier_knockback")
-			if damage > 0 then
-				SendOverheadEventMessage(nil, OVERHEAD_ALERT_DAMAGE, target, damage, nil)
-				local sourcePos = caster:GetAbsOrigin()
-				local duration =  damage / self:GetSpecialValueFor("knockback_duration_step")
-				target:AddNewModifier(caster, self, "modifier_knockback", {
-					knockback_duration = duration,
-					knockback_distance = damage / self:GetSpecialValueFor("knockback_distance_step"),
-					knockback_height = damage / self:GetSpecialValueFor("knockback_height_step"),
-					should_stun = 1,
-					duration = duration,
-					center_x = sourcePos.x,
-					center_y = sourcePos.y,
-					center_z = sourcePos.z
-				})
-			end
+			target:AddNewModifier(caster, self, "modifier_saitama_serious_punch_stun", {duration = duration})
+		else
+			target:TrueKill(self, caster)
 		end
 	end
 end

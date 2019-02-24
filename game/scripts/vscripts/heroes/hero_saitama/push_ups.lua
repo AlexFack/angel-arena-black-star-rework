@@ -1,6 +1,20 @@
+LinkLuaModifier("modifier_saitama_push_ups_invulnerability", "heroes/hero_saitama/push_ups.lua", LUA_MODIFIER_MOTION_NONE)
+
 saitama_push_ups = class({})
 
+modifier_saitama_push_ups_invulnerability = class({})
+
+function modifier_saitama_push_ups_invulnerability:CheckState()
+	return {
+		[MODIFIER_STATE_INVULNERABLE] = true
+	}
+end
+
 if IsServer() then
+	function saitama_push_ups:OnSpellStart()
+		local caster = self:GetCaster()
+		caster:AddNewModifier(caster, self, "modifier_saitama_push_ups_invulnerability", {duration = self:GetChannelTime()})
+	end
 	function saitama_push_ups:OnChannelFinish(bInterrupted)
 		if not bInterrupted then
 			local caster = self:GetCaster()
@@ -10,5 +24,6 @@ if IsServer() then
 			if not modifier then modifier = caster:AddNewModifier(caster, self, "modifier_saitama_limiter", nil) end
 			modifier:SetStackCount(modifier:GetStackCount() + self:GetSpecialValueFor("stacks_amount"))
 		end
+		self:GetCaster():RemoveModifierByName("modifier_saitama_push_ups_invulnerability")
 	end
 end
