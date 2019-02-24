@@ -44,6 +44,8 @@ local modifiers = {
 	modifier_arena_hero = "modifiers/modifier_arena_hero",
 	modifier_item_demon_king_bar_curse = "items/modifier_item_demon_king_bar_curse",
 	modifier_hero_out_of_game = "modifiers/modifier_hero_out_of_game",
+	modifier_decrease_health_for_strength = "modifiers/modifier_decrease_health_for_strength",
+	modifier_armor_for_agility = "modifiers/modifier_armor_for_agility",
 
 	modifier_item_shard_attackspeed_stack = "modifiers/modifier_item_shard_attackspeed_stack",
 }

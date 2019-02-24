@@ -16,6 +16,7 @@ function modifier_arena_hero:DeclareFunctions()
 		MODIFIER_EVENT_ON_ABILITY_END_CHANNEL,
 		MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DIRECT_MODIFICATION,
 		MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
+		MODIFIER_EVENT_ON_TAKEDAMAGE,
 	}
 end
 
@@ -102,17 +103,19 @@ if IsServer() then
 			self:SetSharedKey("resistanceDifference", resistanceDifference)
 		end
 
-		local agilityArmor = parent:GetAgility() * 0.16
-		local idealArmor = CalculateBaseArmor(parent:GetIntellect())
-		if self.idealArmor ~= idealArmor then
-			self.idealArmor = idealArmor
-			parent:SetNetworkableEntityInfo("IdealArmor", idealArmor)
-		end
+		if not parent:FindModifierByName("modifier_armor_for_agility") then
+			local agilityArmor = parent:GetAgility() * 0.16
+			local idealArmor = CalculateBaseArmor(parent:GetIntellect())
+			if self.idealArmor ~= idealArmor then
+				self.idealArmor = idealArmor
+				parent:SetNetworkableEntityInfo("IdealArmor", idealArmor)
+			end
 
-		local armorDifference = idealArmor - agilityArmor
-		if parent.armorDifference ~= armorDifference then
+			local armorDifference = idealArmor - agilityArmor
+			if parent.armorDifference ~= armorDifference then
 			parent.armorDifference = armorDifference
-			parent:SetPhysicalArmorBaseValue(parent:GetKeyValue("ArmorPhysical") + armorDifference)
+				parent:SetPhysicalArmorBaseValue(parent:GetKeyValue("ArmorPhysical") + armorDifference)
+			end
 		end
 
 		local agilityCriticalDamage = 100 + parent:GetAgility() * 0.02

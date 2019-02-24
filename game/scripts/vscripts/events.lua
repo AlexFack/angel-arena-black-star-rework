@@ -58,6 +58,17 @@ function GameMode:OnNPCSpawned(keys)
 				end
 			end
 		end
+
+		if npc:GetUnitName() == "npc_dota_hero_terrorblade" or npc:GetFullName() == "npc_arena_hero_sai" then
+			npc:AddNewModifier(npc, nil, "modifier_decrease_health_for_strength", nil)
+		elseif npc:HasModifier("modifier_decrease_health_for_strength") then
+			npc:RemoveModifierByName("modifier_decrease_health_for_strength")
+		end
+		if npc:GetUnitName() == "npc_dota_hero_morphling" or npc:GetUnitName() == "npc_dota_hero_terrorblade" then
+			npc:AddNewModifier(npc, nil, "modifier_armor_for_agility", nil)
+		elseif npc:HasModifier("modifier_armor_for_agility") then
+			npc:RemoveModifierByName("modifier_armor_for_agility")
+		end
 	end)
 end
 
