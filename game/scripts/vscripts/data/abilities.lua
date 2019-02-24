@@ -61,6 +61,9 @@ MULTICAST_ABILITIES = {
 REFRESH_LIST_IGNORE_REFRESHER = {
 	item_refresher_arena = true,
 	item_refresher_core = true,
+	saitama_push_ups = true,
+	saitama_squats = true,
+	saitama_sit_ups = true,
 }
 
 REFRESH_LIST_IGNORE_BODY_RECONSTRUCTION = {
@@ -69,6 +72,9 @@ REFRESH_LIST_IGNORE_BODY_RECONSTRUCTION = {
 	item_black_king_bar = true,
 	item_titanium_bar = true,
 	item_coffee_bean = true,
+	saitama_push_ups = true,
+	saitama_squats = true,
+	saitama_sit_ups = true,
 
 	destroyer_body_reconstruction = true,
 }
@@ -110,6 +116,9 @@ REFRESH_LIST_IGNORE_REARM = {
 	silencer_global_silence = true,
 	naga_siren_song_of_the_siren = true,
 	slark_shadow_dance = true,
+	saitama_push_ups = true,
+	saitama_squats = true,
+	saitama_sit_ups = true,
 }
 
 COFFEE_BEAN_NOT_REFRESHABLE = {
@@ -119,6 +128,7 @@ COFFEE_BEAN_NOT_REFRESHABLE = {
 	saitama_push_ups = true,
 	saitama_squats = true,
 	saitama_sit_ups = true,
+	destroyer_body_reconstruction = true,
 }
 
 
