@@ -483,9 +483,9 @@ DOTA_Tooltip_ability_item_titanium_bar_active_bonus_attackspeed: 'ДОП. СКО
 DOTA_Tooltip_modifier_item_titanium_bar_active: Titanium Bar
 DOTA_Tooltip_modifier_item_titanium_bar_active_Description: 'Невосприимчив к заклинаниям, имеет полное сопротивление магическому урону, весь получаемый урон уменьшен на %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%, сила увеличена на %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%, скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%.'
 
-DOTA_Tooltip_ability_item_vermillion_robe_Description: '<h1>Пассивная: Vermillion Dust</h1> Увеличивает скорость передвижения на %dust_move_speed_pct%%%, регенерацию маны на %dust_mana_regen%%% и урон на %dust_damage%%% за каждый процент отсутствующего здоровья.'
+DOTA_Tooltip_ability_item_vermillion_robe_Description: '<h1>Пассивная: Vermillion Dust</h1> Увеличивает скорость передвижения на %dust_move_speed_pct%%%, регенерацию маны на %dust_mana_regen%%%, урон на %dust_damage%%% и магическое сопротивление на %dust_magic_resistance%%% за каждый процент отсутствующего здоровья.'
 DOTA_Tooltip_modifier_item_vermillion_robe_delay_Description: 'Когда закончится, нанесёт урон по площади.'
-DOTA_Tooltip_modifier_item_vermillion_robe_dust_Description: 'Регенерация маны увеличена на %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%, скорость передвидения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, урон увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%.'
+DOTA_Tooltip_modifier_item_vermillion_robe_dust_Description: 'Регенерация маны увеличена на %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%, скорость передвидения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, урон увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%, магическое сопротивление увеличено на %MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%.'
 
 DOTA_Tooltip_ability_item_soul_of_titan_Description: |-
   <h1>Пассивная: Elder Aura</h1> Снижает броню на %armor_reduction% всем противников в радиусе %radius%.

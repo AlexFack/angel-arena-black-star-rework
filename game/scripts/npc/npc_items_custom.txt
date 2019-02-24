@@ -3569,7 +3569,7 @@
 		"ItemResult"					"item_vermillion_robe"
 		"ItemRequirements"
 		{
-			"01"						"item_soul_booster;item_pers;item_tranquil_boots;item_cloak"
+			"01"						"item_soul_booster;item_pers;item_tranquil_boots;item_cloak;item_moon_dust"
 		}
 	}
 
@@ -3613,8 +3613,8 @@
 			}
 			"07"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_magical_damage_resistance_pct"	"20"
+				"var_type"				"FIELD_FLOAT"
+				"dust_magic_resistance"	"0.75"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"08"
@@ -3650,7 +3650,6 @@
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"%bonus_health_regen"
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"%bonus_armor"
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%bonus_movement_speed_pct"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%bonus_magical_damage_resistance_pct"
 				}
 
 				"ThinkInterval"  "0.1"
@@ -3685,6 +3684,7 @@
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%dust_mana_regen"
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%dust_move_speed_pct"
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%dust_damage"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%dust_magic_resistance"
 				}
 			}
 		}
@@ -8138,7 +8138,7 @@
 
 		"AbilityCastRange"				"1000"
 		"AbilityCastPoint"				"0"
-		"AbilityCooldown"				"80"
+		"AbilityCooldown"				"30"
 		"AbilityManaCost"				"1000"
 
 		"ItemQuality"					"legendary"
@@ -8192,13 +8192,13 @@
 			}
 			"10"
 			{
-				"var_type"			"FIELD_INTEGER"
+				"var_type"				"FIELD_INTEGER"
 				"bonus_attack_range"	"50"
 			}
 			"11"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"all_damage_bonus_pct"      "10"
+				"all_damage_bonus_pct"      "15"
 			}
 			"12"
 			{
@@ -8208,12 +8208,12 @@
 			"13"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"cast_damage"				"1400"
+				"cast_damage"				"2000"
 			}
 			"14"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"cast_damage_pct"			"3"
+				"cast_damage_pct"			"5"
 			}
 			"15"
 			{
@@ -8228,7 +8228,7 @@
 			"17"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"delayed_damage_per_health"	"0.3"
+				"delayed_damage_per_health"	"0.175"
 			}
 		}
 		"precache"
@@ -8365,7 +8365,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
 		"ItemStackable"					"0"
-		"IsTempestDoubleClonable"		"0"
+		//"IsTempestDoubleClonable"		"0"
 
 		"ItemShopTags"					"damage"
 		"ItemQuality"					"legendary"
@@ -8397,7 +8397,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"singularity_radius"			"800"
+				"singularity_radius"			"600"
 				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"06"
@@ -8409,19 +8409,19 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"damage_pct"					"5.5"
+				"damage_pct"					"3.5"
 				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"08"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"intelligence_damage_pct"		"11"
+				"intelligence_damage_pct"		"7"
 				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"09"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"min_ability_cooldown"			"1.6"
+				"min_ability_cooldown"			"0.5"
 			}
 			"11"
 			{
@@ -8431,7 +8431,7 @@
 			"12"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"slow_duration"					"0.33"
+				"slow_duration"					"0.4"
 			}
 			"13"
 			{
@@ -8440,13 +8440,13 @@
 			}
 			"13"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"aura_radius"				"1400"
+				"var_type"						"FIELD_INTEGER"
+				"aura_radius"					"1200"
 			}
 			"14"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"aura_resist_debuff_pct"		"20"
+				"aura_resist_debuff_pct"		"10"
 			}
 			"15"
 			{
@@ -8456,12 +8456,12 @@
 			"16"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"manacost_pct"					"10"
+				"manacost_pct"					"2"
 			}
 			"17"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"increase_all_damage_pct"		"5"
+				"increase_all_damage_pct"		"15"
 			}
 		}
 		"precache"
