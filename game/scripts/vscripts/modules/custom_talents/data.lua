@@ -400,7 +400,21 @@ CUSTOM_TALENTS_DATA = {
 		group = 9,
 		requirement = "apocalypse_apocalypse",
 	},
-	talent_hero_sai_release_of_forge_bonus_respawn_time_reduction = {
+	talent_hero_sai_release_of_forge_unlimited_attack_range = {
+		icon = "arena/sai_release_of_forge",
+		cost = 250,
+		group = 10,
+		max_level = 1,
+		requirement = "sai_release_of_forge",
+	},
+	talent_hero_sai_release_of_forge_enemy_heroes_vision = {
+		icon = "arena/sai_release_of_forge",
+		cost = 250,
+		group = 10,
+		max_level = 1,
+		requirement = "sai_release_of_forge",
+	},
+	--[[talent_hero_sai_release_of_forge_bonus_respawn_time_reduction = {
 		icon = "arena/sai_release_of_forge",
 		cost = 10,
 		group = 8,
@@ -1216,6 +1230,9 @@ NATIVE_TALENTS = {
 	},
 	special_bonus_unique_pangolier_6 = {
 		group = 6,
+	},
+	special_bonus_unique_pangolier_7 = {
+		group = 4,
 	},
 	special_bonus_unique_dark_willow_1 = {
 		group = 8,

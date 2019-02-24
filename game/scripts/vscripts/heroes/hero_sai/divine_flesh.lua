@@ -20,12 +20,14 @@ end
 
 modifier_sai_divine_flesh_on = class({
 	GetEffectName = function() return "particles/arena/units/heroes/hero_sai/divine_flesh.vpcf" end,
+	IsHidden = function() return true end,
 })
 function modifier_sai_divine_flesh_on:DeclareFunctions()
 	return {
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
 		MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
 		MODIFIER_PROPERTY_DISABLE_HEALING,
+		MODIFIER_PROPERTY_HEALTH_BONUS
 	}
 end
 
@@ -57,7 +59,7 @@ if IsServer() then
 			attacker = parent,
 			damage = damage,
 			damage_type = DAMAGE_TYPE_PURE,
-			damage_flags = DOTA_DAMAGE_FLAG_NO_DAMAGE_MULTIPLIERS + DOTA_DAMAGE_FLAG_HPLOSS,
+			damage_flags = DOTA_DAMAGE_FLAG_NO_DAMAGE_MULTIPLIERS + DOTA_DAMAGE_FLAG_HPLOSS + DOTA_DAMAGE_FLAG_NON_LETHAL,
 			ability = ability
 		})
 	end
@@ -69,7 +71,9 @@ modifier_sai_divine_flesh_off = class({
 })
 
 function modifier_sai_divine_flesh_off:DeclareFunctions()
-	return { MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE }
+	return { 
+	MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE,
+	}
 end
 
 function modifier_sai_divine_flesh_off:GetModifierHealthRegenPercentage()
@@ -85,13 +89,8 @@ if IsServer() then
 	function modifier_sai_divine_flesh_off:OnIntervalThink()
 		local ability = self:GetAbility()
 		local parent = self:GetParent()
-		local sai_invulnerability = parent:FindAbilityByName("sai_invulnerability")
-		local isUnderInvulnerability = sai_invulnerability and sai_invulnerability:GetToggleState()
 
 		self.health_regeneration_pct = ability:GetSpecialValueFor("health_regeneration_pct")
-		if isUnderInvulnerability then
-			self.health_regeneration_pct = self.health_regeneration_pct * sai_invulnerability:GetSpecialValueFor("divine_flesh_regen_mult")
-		end
 		self:SetSharedKey("health_regeneration_pct", self.health_regeneration_pct)
 	end
 end

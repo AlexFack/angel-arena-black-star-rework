@@ -1,42 +1,56 @@
 npc_arena_hero_sai_hype: 'Сай становится сильнее от полученных ран, упиваясь сражением. Он не боится ранений, быстро восстанавливая их, а в крайнем случае он высвобождает свою истинную сущность - древнего, могущественного демона, который достанет врага где угодно...'
-npc_arena_hero_sai_bio: 'Могучий Воин бороздил множество миров в поисках достойных оппонентов. Никто не знал, откуда Он пришел и на что был способен: желающие сразиться с Ним не могли даже поцарапать его кожу, а Ему стоило лишь немного шевельнуть мечом, чтобы повалить противника замертво. В мирах Он долго не задерживался - убедившись в слабости существ, Он шел дальше по своему неведомому пути. Бывало, что противники могли дать Ему более-менее достойный бой, однако лишь до той поры, пока Воин не получал глубокую рану - проливая свою кровь, неведомая сила наполняла Его, и удары Его становились тем сильнее, чем более серьезные раны Он получал. А когда бой заканчивался, повреждения затягивались, будто их и не было. Но однажды страннику довелось столкнуться с Кадашем. Он бросил ему вызов, и началась кровопролитная схватка. Никогда прежде Ему не приходилось сражаться с таким врагом - его клинок, достигая цели, не мог поранить толстый доспех Бессмертного Всадника. Снова и снова Воин принимал удары, и становился все сильнее и сильнее. Иногда он сам себя разил мечом, чтобы испытать больше боли, но все равно ему не хватало силы, чтобы дать отпор напору Кадаша. Никто не уступал. И вот, казалось, конец - Его тело было покрыто ужасающими ранами, казалось, несовместимыми с жизнью. «Это был достойный поединок... Никогда мне не доводилось встречать столь искуссного врага...» - прохрипел Воин, опираясь на клинок. «Ты будешь вторым, кому я покажу свой истинный лик...» Воин поразил себя мечом в самое сердце, и некая устрашающая мощь разорвала его изнутри - пред Кадашем предстало огненное, демоническое чудовище, источавшее из себя огромные волны силы и разрушения. Одним взмахом руки оно прикончило Бессмертного Всадника, после чего истлело... Кадаш не погиб, но отдал дань уважения могучему сопернику, после продолжив свой путь. Воин также не умер окончательно - много лет потребовалось Ему, чтобы восстановить свое тело воедино из праха. Восстановив тело, Он нашел новую цель своего странствия - вновь отыскать всадника, и вновь бросить ему вызов. Этот путь привел Его на арену Ангелов, где помимо Кадаша собрались сильнейшие воины со всего Мироздания. Это состязание обещало Ему славную победу, либо славную смерть.'
+npc_arena_hero_sai_bio: 'Могучий Воин бороздил множество миров в поисках достойных оппонентов. Никто не знал, откуда Он пришел и на что был способен: желающие сразиться с Ним не могли даже поцарапать его кожу, а Ему стоило лишь немного шевельнуть цепью булавы, чтобы повалить противника замертво. В мирах Он долго не задерживался - убедившись в слабости существ, Он шел дальше по своему неведомому пути. Бывало, что противники могли дать Ему более-менее достойный бой, однако лишь до той поры, пока Воин не получал глубокую рану - проливая свою кровь, неведомая сила наполняла Его, и удары Его становились тем сильнее, чем более серьезные раны Он получал. А когда бой заканчивался, повреждения затягивались, будто их и не было. Но однажды страннику довелось столкнуться с Кадашем. Он бросил ему вызов, и началась кровопролитная схватка. Никогда прежде Ему не приходилось сражаться с таким врагом - его клинок, достигая цели, не мог поранить толстый доспех Бессмертного Всадника. Снова и снова Воин принимал удары, и становился всё сильнее и сильнее. Все чаще начинал он сам себя ранить, чтобы испытать больше боли, но все равно ему не хватало силы, чтобы дать отпор напору Кадашу. Никто не уступал. И вот, казалось, конец - Его тело было покрыто ужасающими ранами, казалось, несовместимыми с жизнью. «Это был достойный поединок... Никогда мне не доводилось встречать столь искуссного врага...» - прохрипел Воин, опираясь на клинок. «Ты будешь вторым, кому я покажу свой истинный лик...» Воин поразил себя мечом в самое сердце, и некая устрашающая мощь разорвала его изнутри - пред Кадашем предстало огненное, демоническое чудовище, источавшее из себя огромные волны силы и разрушения. Одним взмахом руки оно прикончило Бессмертного Всадника, после чего истлело... Кадаш не погиб, но отдал дань уважения могучему сопернику, после продолжив свой путь. Воин также не умер окончательно - много времени потребовалось Ему, чтобы восстановить свое тело воедино из праха. Восстановившись же, Он нашел новую цель своего странствия - вновь отыскать всадника, и вновь бросить ему вызов. Этот путь привел Его на арену Ангелов, где помимо Кадаша собрались сильнейшие воины со всего Мироздания. Это состязание обещало Ему славную победу... Либо славную смерть.'
 
-DOTA_Tooltip_ability_sai_rage_of_pain_Description: 'Атаки Сая наносят больше урона, а также получают возможность нанести дополнительный критический урон при атаке. Дополнительный урон, шанс срабатывания и множитель крита увеличиваются за каждый стак способности. Чем меньше здоровья героя, тем больше стаков. За каждые %mana_for_bonus_damage% ед. максимальной маны получает 1% дополнительного урона за стак.'
+DOTA_Tooltip_modifier_sai_hp_decrease: Снижение здоровья
+DOTA_Tooltip_modifier_sai_hp_decrease_Description: 'Получает 14 здоровья за единицу силы вместо 20.'
+DOTA_Tooltip_ability_sai_rage_of_pain_Description: 'Атаки Воина получают дополнительный урон и возможность нанести критический урон при атаке в зависимости от отсутствующего здоровья. Чем меньше здоровья, тем выше шанс и больше множитель урона.'
+DOTA_Tooltip_ability_sai_rage_of_pain_Note0: Множитель критического урона полностью сочетается с другими его источниками.
 DOTA_Tooltip_ability_sai_rage_of_pain_Lore: Демону, обитающему глубоко в душе Воина, все проще выбираться наружу с каждой пролитой каплей крови хозяина.
 DOTA_Tooltip_ability_sai_rage_of_pain_health_per_stack_pct:  'МАКСИМУМ СТАКОВ:'
-DOTA_Tooltip_ability_sai_rage_of_pain_damage_per_stack_pct: '%УРОН ЗА СТАК:'
+DOTA_Tooltip_ability_sai_rage_of_pain_damage_per_stack: 'ДОП. УРОНА ЗА СТАК:'
+DOTA_Tooltip_ability_sai_rage_of_pain_damage_per_stack_pct: '%УВЕЛИЧЕНИЕ БАЗОВОГО УРОНА ЗА СТАК:'
 DOTA_Tooltip_ability_sai_rage_of_pain_crit_chance_pct: '%ШАНС КРИТА:'
 DOTA_Tooltip_ability_sai_rage_of_pain_crit_chance_per_stack_pct: '%ШАНС КРИТА ЗА СТАК:'
-DOTA_Tooltip_ability_sai_rage_of_pain_crit_mult_pre_stack_pct: '%КРИТИЧЕСКИЙ УРОН ЗА СТАК:'
+DOTA_Tooltip_ability_sai_rage_of_pain_default_crit_pct: '%КРИТИЧЕСКИЙ УРОН:'
 DOTA_Tooltip_modifier_sai_rage_of_pain: Rage of Pain
-DOTA_Tooltip_modifier_sai_rage_of_pain_Description: Урон увеличен на %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%%, имеет возможность наносить критический урон.
+DOTA_Tooltip_modifier_sai_rage_of_pain_Description: Урон увеличен на %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%%.
 
-DOTA_Tooltip_ability_sai_divine_flesh_Description: 'Когда способность включена, герой получает чистый урон каждую секунду и не может исцелиться, но взамен получает дополнительную броню и сопротивление магическому урону. Когда способность не активна, увеличивает регенерацию здоровья.'
-DOTA_Tooltip_ability_sai_divine_flesh_Lore: Сай обладает уникальной, чрезвычайно мощной регенерацией, но даже она не помогает, если дать демону волю...
+DOTA_Tooltip_ability_sai_divine_flesh_Description: 'Когда способность включена, герой получает урон каждую секунду и не может исцелиться, но взамен получает дополнительную броню и сопротивление магическому урону. Когда способность не активна, увеличивает регенерацию максимального здоровья.'
+DOTA_Tooltip_ability_sai_divine_flesh_Lore: Воин обладает чрезвычайно мощной жизненной силой, но даже она не помогает, если дать демону волю...
+DOTA_Tooltip_ability_sai_divine_flesh_Note0: Урон от способности не может убить.
 DOTA_Tooltip_ability_sai_divine_flesh_health_regeneration_pct: '%ДОП. РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:'
 DOTA_Tooltip_ability_sai_divine_flesh_active_self_damage_pct: '%УРОН ОТ МАКС. ЗДОРОВЬЯ:'
 DOTA_Tooltip_ability_sai_divine_flesh_active_bonus_armor: 'ДОП. БРОНЯ:'
 DOTA_Tooltip_ability_sai_divine_flesh_active_magic_resistance_pct: '%СОПРОТИВЛЕНИЕ МАГ. УРОНУ:'
 
-DOTA_Tooltip_ability_sai_invulnerability_Description: 'Пока способность включена, урон, скорость атаки и скорость передвижения героя уменьшаются, но взамен уменьшается весь получаемый урон, а регенерация здоровья, даруемая способностью Divine Flesh, увеличивается в несколько раз.'
-DOTA_Tooltip_ability_sai_invulnerability_Lore: Жертвуя боевым потенциалом и концентрируясь на обороне, Воин становится поистине неуязвимым.
-DOTA_Tooltip_ability_sai_invulnerability_outgoing_damage_reduction_pct: '%СНИЖ. НАНОСИМОГО УРОНА:'
-DOTA_Tooltip_ability_sai_invulnerability_incoming_damage_reduction_pct: '%СНИЖ. ПОЛУЧАЕМОГО УРОНА:'
-DOTA_Tooltip_ability_sai_invulnerability_divine_flesh_regen_mult: 'МНОЖИТЕЛЬ РЕГЕН. DIVINE FLESH:'
-DOTA_Tooltip_ability_sai_invulnerability_mana_per_second: 'МАНЫ В СЕКУНДУ:'
-DOTA_Tooltip_ability_sai_invulnerability_mana_per_second_pct: '%МАКС. МАНЫ В СЕКУНДУ:'
-DOTA_Tooltip_ability_sai_invulnerability_attack_speed_reduction: 'СНИЖ. СКОР. АТАКИ:'
-DOTA_Tooltip_ability_sai_invulnerability_movement_speed_reduction_pct: '%СНИЖ. СКОР. ПЕРЕДВИЖ:'
+DOTA_Tooltip_ability_sai_invulnerability_Description: 'Воин встаёт в защитную стойку, уменьшая весь входящий и исходящий урон, а также сильно замедляясь. По окончанию эффекта он получает бонус к атаке в зависимости от полученного урона во время действия способности.'
+DOTA_Tooltip_ability_sai_invulnerability_Lore: Иногда имеет смысл уйти в глухую оборону, чтобы как следует изучить приёмы противника и контратаковать...
+DOTA_Tooltip_ability_sai_invulnerability_Note0: Способность может быть активирована в оглушении.
+DOTA_Tooltip_ability_sai_invulnerability_Note1: Активация снимает большинство отрицательных эффектов.
+DOTA_Tooltip_ability_sai_invulnerability_Note2: При подсчёте бонуса к атаке снижение урона от способности не учитывается.
+DOTA_Tooltip_ability_sai_invulnerability_damage_reduction_pct: '%СНИЖЕНИЕ УРОНА:'
+DOTA_Tooltip_ability_sai_invulnerability_movement_speed_constant: 'ЗНАЧЕНИЕ СКОРОСТИ ПЕРЕДВИЖЕНИЯ:'
+DOTA_Tooltip_ability_sai_invulnerability_taken_damage_in_bonus_pct: '%ПОЛУЧЕННОГО УРОНА В АТАКУ:'
+DOTA_Tooltip_ability_sai_invulnerability_bonus_damage_duration: 'ПРОДОЛЖИТЕЛЬНОСТЬ УСИЛЕНИЯ:'
 
-DOTA_Tooltip_ability_sai_release_of_forge_Description: 'Герой становится бессмертным на некоторое время, его здоровье падает до единицы и не может восстановиться, часть его урона становится чистым, дальность атаки становится неограниченной, а все вражеские герои на карте замедляются на %aura_movement_speed_pct%%%, а их скорость поворота и время произношения заклинаний снижается. После окончания действия способности Сай погибнет, а время его воскрешения будет увеличено.'
-DOTA_Tooltip_ability_sai_release_of_forge_aghanim_description: Дает герою шанс выжить и полностью восстановить здоровье после окончания действия способности.
+DOTA_Tooltip_ability_sai_release_of_forge_Description: 'Воин высвобождает Демона, теряя %self_damage_pct%%% текущего здоровья. Демон невосприимчим к атакам, наносит часть урона в чистом виде, имеет дальнюю форму атаки и распространяет ауру ужаса, замедляющую скорость поворота и использования способностей, но скорость передвижения ограничена до %movement_speed% ед. В конце действия способности Воин восстановит утраченное здоровье в увеличенном количестве.'
 DOTA_Tooltip_ability_sai_release_of_forge_Lore: Воздух тяжелеет...
+DOTA_Tooltip_ability_sai_release_of_forge_Note0: Способность может быть активирована в оглушении.
+DOTA_Tooltip_ability_sai_release_of_forge_Note1: Активация снимает большинство отрицательных эффектов.
 DOTA_Tooltip_ability_sai_release_of_forge_duration: 'ДЛИТЕЛЬНОСТЬ:'
 DOTA_Tooltip_ability_sai_release_of_forge_pure_damage_pct: '%ЧИСТЫЙ УРОН ОТ АТАК:'
+DOTA_Tooltip_ability_sai_release_of_forge_attack_range_bonus: 'БОНУС К ДАЛЬНОСТИ АТАКИ:'
+DOTA_Tooltip_ability_sai_release_of_forge_final_regeneration_multiplier: '%УСИЛЕНИЕ РЕГЕНЕРАЦИИ:'
+DOTA_Tooltip_ability_sai_release_of_forge_final_regeneration_duration: 'ДЛИТЕЛЬНОСТЬ РЕГЕНЕРАЦИИ:'
+DOTA_Tooltip_ability_sai_release_of_forge_magic_resistange: '%УМЕНЬШЕНИЕ СОПР. МАГИИ:'
+DOTA_Tooltip_ability_sai_release_of_forge_rage_of_pain_multiplier_pct: '%МНОЖИТЕЛЬ УРОНА Rage Of Pain:'
 DOTA_Tooltip_ability_sai_release_of_forge_aura_movement_speed_pct: '%СНИЖЕНИЕ СКОРОСТИ ПЕРЕДВИЖЕНИЯ:'
 DOTA_Tooltip_ability_sai_release_of_forge_aura_vision_pct: '%СНИЖЕНИЕ РАДИУСА ОБЗОРА:'
 DOTA_Tooltip_ability_sai_release_of_forge_aura_cast_time_pct: '%СНИЖЕНИЕ СКОР. ПРОИЗНОШЕНИЯ ЗАКЛ.:'
 DOTA_Tooltip_ability_sai_release_of_forge_aura_turn_rate_pct: '%СНИЖЕНИЕ СКОРОСТИ ПОВОРОТА:'
-DOTA_Tooltip_ability_sai_release_of_forge_bonus_respawn_time_pct: 'ДОП. ВРЕМЯ ВОЗРОЖДЕНИЯ:'
-DOTA_Tooltip_ability_sai_release_of_forge_chance_to_live: '%ШАНС ВЫЖИТЬ СО СКИПЕТРОМ:'
+DOTA_Tooltip_modifier_sai_release_of_forge_final_regeneration: Final Regeneration
+DOTA_Tooltip_modifier_sai_release_of_forge_final_regeneration_Description: 'Регенерирует.'
+DOTA_Tooltip_modifier_sai_release_of_forge: Release Of Forge
+DOTA_Tooltip_modifier_sai_release_of_forge_Description: Время для настоящей битвы пришло.
+DOTA_Tooltip_modifier_sai_release_of_forge_mass_debuff: Aura Of Horror
 DOTA_Tooltip_modifier_sai_release_of_forge_mass_debuff_Description: Скорость передвижения снижена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, дальность обзора снижена на %dMODIFIER_PROPERTY_BONUS_VISION_PERCENTAGE%%%, скорость каста снижена на %dMODIFIER_PROPERTY_CASTTIME_PERCENTAGE%%%, скорость поворота снижена на %dMODIFIER_PROPERTY_TURN_RATE_PERCENTAGE%%%.
