@@ -154,7 +154,18 @@ end
 modifier_item_scythe_of_the_ancients_stun = class({
 	IsHidden = function() return false end,
 	IsPurgable = function() return false end,
+	GetAttributes = function() return MODIFIER_ATTRIBUTE_MULTIPLE end
 })
+
+function modifier_item_scythe_of_the_ancients_stun:DeclareFunctions()
+	return {
+		MODIFIER_PROPERTY_DISABLE_HEALING
+	}
+end
+
+function modifier_item_scythe_of_the_ancients_stun:GetDisableHealing()
+	return 1
+end
 
 if IsServer() then
 	function modifier_item_scythe_of_the_ancients_stun:OnCreated()
