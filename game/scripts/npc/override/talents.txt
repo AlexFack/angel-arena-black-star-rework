@@ -205,7 +205,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"value"				"1300"
+				"value"				"13"
 			}
 		}
 	}
