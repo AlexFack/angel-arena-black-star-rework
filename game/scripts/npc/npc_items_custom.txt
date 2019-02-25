@@ -6260,16 +6260,14 @@
 	"item_demonic_cuirass"
 	{
 		"BaseClass"						"item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"item_arena/demonic_cuirass"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"ItemQuality"					"legendary"
 		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemAliases"					"ac;assault cuirass;dkb;demon king bar;monkey king bar;mkb;demonic cuirass"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemShopTags"					"damage;attack_speed;armor;hard_to_tag"
-
-		"AbilityCooldown"				"80"
-		"AbilityManaCost"				"400"
+		
 		"AbilityCastRange"				"%aura_radius"
 		"AbilityCastPoint"				"0.2"
 
@@ -6341,37 +6339,6 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"aura_bash_damage"		"200"
-			}
-		}
-
-		"OnSpellStart"
-		{
-			"ActOnTargets"
-			{
-				"Target"
-				{
-					"Center"  	"CASTER"
-					"Radius" 	"%aura_radius"
-					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				}
-
-				"Action"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"kv.lua"
-						"Function"		"ApplyModifierWithoutRefresh"
-						"modifier"		"modifier_item_demon_king_bar_curse"
-						"lua"			"1"
-					}
-
-					"FireSound"
-					{
-						"EffectName"	"Hero_VengefulSpirit.MagicMissile"
-						"Target" 		"CASTER"
-					}
-				}
 			}
 		}
 
@@ -6508,6 +6475,31 @@
 			{
 				"IsPurgable"			"0"
 				"IsDebuff"				"1"
+				"ThinkInterval" 		"1"
+
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"%aura_radius"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+							"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+						}
+
+						"Action"
+						{
+							"RunScript"
+							{
+								"ScriptFile"	"items/item_demonic_cuirass.lua"
+								"Function"		"PassiveCurse"
+							}
+						}
+					}
+				}
+
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"			"%aura_negative_armor"
@@ -8115,7 +8107,7 @@
 		"BaseClass"						"item_datadriven"
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"AbilityTextureName"			"item_recipe"
-		"ItemCost"						"40000"
+		"ItemCost"						"10000"
 		"ItemShopTags"					""
 		"ItemRecipe"					"1"
 		"ItemResult"					"item_scythe_of_the_ancients"
@@ -8198,12 +8190,13 @@
 			"11"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"all_damage_bonus_pct"      "15"
+				"all_damage_bonus_pct"      "12"
+				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"12"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"magic_damage_to_pure_pct"	"30"
+				"magic_damage_to_pure_pct"	"24"
 			}
 			"13"
 			{
@@ -8213,7 +8206,7 @@
 			"14"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"cast_damage_pct"			"5"
+				"cast_damage_pct"			"7.5"
 			}
 			"15"
 			{
@@ -8345,7 +8338,7 @@
 	{
 		"BaseClass"						"item_datadriven"
 		"Model"							"models/props_gameplay/recipe.vmdl"
-		"ItemCost"						"66666"
+		"ItemCost"						"6666"
 		"ItemRecipe"					"1"
 		"ItemResult"					"item_unstable_quasar"
 		"ItemRequirements"
@@ -8363,7 +8356,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_SPACE"
 		"ItemStackable"					"0"
 		//"IsTempestDoubleClonable"		"0"
 
@@ -8404,24 +8397,23 @@
 			{
 				"var_type"						"FIELD_FLOAT"
 				"base_damage"					"250"
-				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"damage_pct"					"3.5"
+				"damage_pct"					"4.5"
 				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"08"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"intelligence_damage_pct"		"7"
+				"intelligence_damage_pct"		"9"
 				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"09"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"min_ability_cooldown"			"0.5"
+				"min_ability_cooldown"			"0.1"
 			}
 			"11"
 			{
@@ -8451,17 +8443,17 @@
 			"15"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"manacost"						"100"
+				"manacost"						"50"
 			}
 			"16"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"manacost_pct"					"2"
+				"manacost_pct"					"2.5"
 			}
 			"17"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"increase_all_damage_pct"		"15"
+				"increase_all_damage_pct"		"12"
 			}
 		}
 		"precache"
