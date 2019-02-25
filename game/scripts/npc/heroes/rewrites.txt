@@ -5,6 +5,10 @@
 		"override_hero"			"npc_dota_hero_tinker"
 		"Ability6"				"tinker_rearm_arena"
 		"AttackRate"			"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_TECH" 	"50"
+		}
 	}
 
 	"npc_dota_hero_life_stealer"
@@ -12,6 +16,15 @@
 		"override_hero"			"npc_dota_hero_life_stealer"
 		"Ability2"				"life_stealer_feast_arena"
 		"AttackRate"			"2.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-100"
+			"DAMAGE_SUBTYPE_POISON" "50"
+			"DAMAGE_SUBTYPE_BLOOD" 	"50"
+			"DAMAGE_SUBTYPE_ICE" 	"50"
+			"DAMAGE_SUBTYPE_FIRE" 	"-50"
+		}
 	}
 
 	"npc_dota_hero_gyrocopter"
@@ -22,5 +35,9 @@
 		"MovementSpeed"			"325"
 		"AttributeBaseAgility"	"16"
 		"AttributeAgilityGain"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_TECH" 	"50"
+		}
 	}
 }

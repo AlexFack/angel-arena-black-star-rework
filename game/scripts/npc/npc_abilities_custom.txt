@@ -274,6 +274,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityCastRange"				"400"
 		"MaxLevel"						"7"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_FIRE"
 
 		"AbilitySpecial"
 		{

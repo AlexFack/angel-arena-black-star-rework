@@ -150,6 +150,24 @@ function GameMode:DamageFilter(filterTable)
 	end
 	local victim = EntIndexToHScript(filterTable.entindex_victim_const)
 
+	if inflictor and inflictor:GetKeyValue("AbilityUnitDamageSubType") then
+		local subtype = inflictor:GetKeyValue("AbilityUnitDamageSubType")
+
+		if victim and victim:GetKeyValue("DamgeSubTypeResistance") then
+			local resist = victim:GetKeyValue("DamgeSubTypeResistance")
+			if resist[subtype] then
+				if resist[subtype] >= 100 then resist[subtype] = 200 end
+				filterTable.damage = damage - damage * resist[subtype] * 0.01
+			elseif subtype == "DAMAGE_SUBTYPE_POISON" then
+				resist[subtype] = -25
+				filterTable.damage = damage - damage * resist[subtype] * 0.01
+			elseif subtype == "DAMAGE_SUBTYPE_SPACE" then
+				resist[subtype] = -25
+				filterTable.damage = damage - damage * resist[subtype] * 0.01
+			end
+		end
+	end
+
 	if IsValidEntity(attacker) then
 		if IsValidEntity(inflictor) and inflictor.GetAbilityName then
 			local inflictorname = inflictor:GetAbilityName()
@@ -159,6 +177,7 @@ function GameMode:DamageFilter(filterTable)
 					damage_from_current_health_pct = damage_from_current_health_pct * PERCENT_DAMAGE_MODIFIERS[inflictorname]
 				end
 				filterTable.damage = filterTable.damage + (victim:GetHealth() * damage_from_current_health_pct * 0.01)
+				filterTable.damage = filterTable.damage - (filterTable.damage * victim:GetMagicalArmorValue() * 0.01)
 			end
 
 			if IsValidEntity(inflictor.originalInflictor) then

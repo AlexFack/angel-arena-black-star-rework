@@ -66,6 +66,7 @@
 		"MaxLevel"						"7"
 		"AbilityCooldown"				"30"
 		"AbilityManaCost"				"50"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_TECH"
 
 		"AbilitySpecial"
 		{

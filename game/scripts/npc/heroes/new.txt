@@ -53,6 +53,7 @@
 			"DAMAGE_SUBTYPE_FIRE"	"30"
 			"DAMAGE_SUBTYPE_WATER"	"30"
 			"DAMAGE_SUBTYPE_ENERGY"	"30"
+			"DAMAGE_SUBTYPE_SPACE"	"30"
 		}
 	}
 
@@ -68,8 +69,8 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_FIRE" 		"0"
-			"DAMAGE_SUBTYPE_WATER" 		"50"
+			"DAMAGE_SUBTYPE_FIRE" 		"-25"
+			"DAMAGE_SUBTYPE_WILD"		"100"
 		}
 	}
 
@@ -99,6 +100,10 @@
 		"ArmorPhysical"	"2"
 		"MagicalResistance"	"10"
 		"RenderColor"	"165 0 255"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_SPACE" 		"100"
+		}
 	}
 
 	"npc_arena_hero_apocalypse"
@@ -129,7 +134,7 @@
 
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"-25"
 			"DAMAGE_SUBTYPE_LIGHT" 	"50"
 		}
 	}
@@ -185,8 +190,9 @@
 
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
 			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+			"DAMAGE_SUBTYPE_SPACE" 	"50"
 		}
 	}
 
@@ -217,8 +223,8 @@
 
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"0"
-			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-25"
 		}
 	}
 
@@ -262,9 +268,11 @@
 
 		"DamgeSubTypeResistance"
 		{
+			"DAMAGE_SUBTYPE_SPACE" 	"50"
+			"DAMAGE_SUBTYPE_BLOOD" 	"100"
+			"DAMAGE_SUBTYPE_POISON" "100"
+			"DAMAGE_SUBTYPE_ICE" 	"100"
 			"DAMAGE_SUBTYPE_WATER" 	"100"
-			"DAMAGE_SUBTYPE_ENERGY" "100"
-			"DAMAGE_SUBTYPE_FIRE" 	"100"
 		}
 	}
 
@@ -330,8 +338,10 @@
 
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_ICE" 	"0"
+			"DAMAGE_SUBTYPE_ICE" 	"-25"
+			"DAMAGE_SUBTYPE_AIR" 	"-25"
 			"DAMAGE_SUBTYPE_FIRE" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 	"50"
 		}
 	}
 
@@ -364,6 +374,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_DARK"	"100"
+			"DAMAGE_SUBTYPE_ENERGY"	"75"
 		}
 	}
 
@@ -419,6 +430,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_EARTH" "50"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
 		}
 
 	}
@@ -480,7 +492,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_DARK" 	"25"
-			"DAMAGE_SUBTYPE_LIGHT" 	"-50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-5"
 		}
 	}
 
@@ -545,6 +557,13 @@
 			"DAMAGE_SUBTYPE_FIRE"	"15"
 			"DAMAGE_SUBTYPE_WATER"	"15"
 			"DAMAGE_SUBTYPE_ENERGY"	"15"
+			"DAMAGE_SUBTYPE_SPACE"	"15"
+			"DAMAGE_SUBTYPE_BLOOD"	"15"
+			"DAMAGE_SUBTYPE_SOUND"	"15"
+			"DAMAGE_SUBTYPE_POISON"	"15"
+			"DAMAGE_SUBTYPE_AIR"	"15"
+			"DAMAGE_SUBTYPE_WILD"	"15"
+			"DAMAGE_SUBTYPE_TECH"	"15"
 		}
 	}
 }

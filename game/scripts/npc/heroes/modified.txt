@@ -17,6 +17,11 @@
 		"AttributeAgilityGain"	"2.5"
 		"MovementSpeed"	"305"
 		"AttributeIntelligenceGain"	"2.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 		"50"
+			"DAMAGE_SUBTYPE_POISON"		"50"
+		}
 	}
 
 	"npc_dota_hero_doom_bringer"
@@ -30,6 +35,12 @@
 		"AttributeAgilityGain"	"2.4"
 		"MovementSpeed"	"300"
 		"AttributeIntelligenceGain"	"2.3"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 		"100"
+			"DAMAGE_SUBTYPE_DARK"		"75"
+			"DAMAGE_SUBTYPE_LIGHT"		"-50"
+		}
 	}
 
 	"npc_dota_hero_huskar"
@@ -39,6 +50,11 @@
 		"Ability2"	"huskar_burning_spear_arena"
 		"AttackRate"	"1.7"
 		"ArmorPhysical"	"-2"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 		"50"
+			"DAMAGE_SUBTYPE_BLOOD"		"50"
+		}
 	}
 
 	"npc_dota_hero_pudge"
@@ -62,5 +78,14 @@
 		"Ability15"	""
 		"Ability16"	""
 		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-100"
+			"DAMAGE_SUBTYPE_POISON" "50"
+			"DAMAGE_SUBTYPE_BLOOD" 	"50"
+			"DAMAGE_SUBTYPE_ICE" 	"50"
+			"DAMAGE_SUBTYPE_FIRE" 	"-50"
+		}
 	}
 }
