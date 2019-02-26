@@ -69,7 +69,9 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
+			"DAMAGE_SUBTYPE_TECH" 		"-25"
 			"DAMAGE_SUBTYPE_FIRE" 		"-25"
+			"DAMAGE_SUBTYPE_EARTH"		"75"
 			"DAMAGE_SUBTYPE_WILD"		"100"
 		}
 	}
@@ -402,6 +404,10 @@
 		"AttributeAgilityGain"	"3.0"
 		"AttackDamageMin"	"40"
 		"AttackDamageMax"	"41"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" "100"
+		}
 	}
 
 	"npc_arena_hero_destroyer"
