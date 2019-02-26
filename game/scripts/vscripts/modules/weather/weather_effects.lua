@@ -1,5 +1,6 @@
 ModuleLinkLuaModifier(..., "modifier_weather_storm_debuff")
 ModuleLinkLuaModifier(..., "modifier_weather_blizzard_debuff")
+ModuleLinkLuaModifier(..., "modifier_weather_blizzard_debuff_heal_disable")
 
 function CreateLightningBlot(position)
 	local originalPosition
@@ -12,7 +13,7 @@ function CreateLightningBlot(position)
 		end
 	end
 
-	local aoe = 125
+	local aoe = 225
 	CreateGlobalParticle("particles/units/heroes/hero_zuus/zuus_lightning_bolt.vpcf", function(particle)
 		local lightningSourcePosition = originalPosition and (originalPosition + Vector(0, 0, 1200)) or
 			(position + Vector(RandomInt(-250, 250), RandomInt(-250, 250), 1200))
@@ -22,10 +23,29 @@ function CreateLightningBlot(position)
 	EmitSoundOnLocationWithCaster(position, "Hero_Zuus.LightningBolt", nil)
 
 	GridNav:DestroyTreesAroundPoint(position, aoe, true)
-	local duration = 0.2
+	local duration = 1.2
 	for _,v in ipairs(FindUnitsInRadius(DOTA_TEAM_NEUTRALS, position, nil, aoe, DOTA_UNIT_TARGET_TEAM_BOTH, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)) do
-		if not v:IsMagicImmune() then
-			v:AddNewModifier(v, nil, "modifier_weather_storm_debuff", { duration = duration })
+		if not v:IsMagicImmune() and not v:IsBoss() then
+			local amplification = 0
+			local damage = 200 + v:GetHealth() * 20 * 0.01
+			local subtype = "DAMAGE_SUBTYPE_ENERGY"
+			local resist = v:GetKeyValue("DamgeSubTypeResistance")
+			if resist and resist[subtype] then
+				amplification = resist[subtype]
+				if amplification < 50 then
+					v:AddNewModifier(v, nil, "modifier_weather_storm_debuff", { duration = duration })	
+				end
+			end
+			if amplification > 100 then amplification = 100 end
+			local damage = damage - damage * amplification * 0.01
+			ApplyDamage({
+				attacker = v,
+				victim = v,
+				damage = damage,
+				damage_type = DAMAGE_TYPE_MAGICAL,
+				damage_flags = DOTA_DAMAGE_FLAG_NON_LETHAL,
+				ability = nil
+			})
 		end
 	end
 end
@@ -40,8 +60,28 @@ function CreateCrystalNova(position)
 
 	local duration = 0.4 + (RandomInt(4, 9) / 10)
 	for _,v in ipairs(FindUnitsInRadius(DOTA_TEAM_NEUTRALS, position, nil, aoe, DOTA_UNIT_TARGET_TEAM_BOTH, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)) do
-		if not v:IsMagicImmune() then
-			v:AddNewModifier(v, nil, "modifier_weather_blizzard_debuff", { duration = duration })
+		if not v:IsMagicImmune() and not v:IsBoss() then
+			local amplification = 0
+			local damage = 100 + v:GetHealth() * 10 * 0.01
+			local subtype = "DAMAGE_SUBTYPE_ICE"
+			local resist = v:GetKeyValue("DamgeSubTypeResistance")
+			if resist and resist[subtype] then
+				amplification = resist[subtype]
+				if amplification < 50 then
+					v:AddNewModifier(v, nil, "modifier_weather_blizzard_debuff_heal_disable", { duration = 5 })
+					v:AddNewModifier(v, nil, "modifier_weather_blizzard_debuff", { duration = duration })	
+				end
+			end
+			if amplification > 100 then amplification = 100 end
+			local damage = damage - damage * amplification * 0.01
+			ApplyDamage({
+				attacker = v,
+				victim = v,
+				damage = damage,
+				damage_type = DAMAGE_TYPE_MAGICAL,
+				damage_flags = DOTA_DAMAGE_FLAG_NON_LETHAL,
+				ability = nil
+			})
 		end
 	end
 end
