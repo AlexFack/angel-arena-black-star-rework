@@ -134,9 +134,16 @@ modifier_item_book_of_the_guardian_blast = class({
 })
 
 function modifier_item_book_of_the_guardian_blast:DeclareFunctions()
-	return {MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE}
+	return {
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+		MODIFIER_PROPERTY_DISABLE_HEALING
+	}
 end
 
 function modifier_item_book_of_the_guardian_blast:GetModifierMoveSpeedBonus_Percentage()
 	return self:GetAbility():GetSpecialValueFor("blast_movement_speed_pct")
+end
+
+function modifier_item_book_of_the_guardian_blast:GetDisableHealing()
+	return 1
 end
