@@ -469,7 +469,7 @@
 		"AbilityCastPoint"	"0.3 0.3 0.3 0.3 0.3 0.2 0.1"
 		"AbilityCooldown"	"18 17 16 15 14 13 12"
 		"AbilityManaCost"	"100"
-		"AbilityUnitDamageSubType" "DAMAGE_TYPE_BLOOD"
+		"AbilityUnitDamageSubType" "DAMAGE_SUBTYPE_BLOOD"
 		"AbilitySpecial"
 		{
 			"01"
@@ -559,7 +559,7 @@
 		"AbilityCooldown"	"60"
 		"AbilityManaCost"	"150 200 250 300 350 400 450"
 		"AbilityCastRange"	"900"
-		"AbilityUnitDamageSubType"	"DAMAGE_TYPE_BLOOD"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_BLOOD"
 		"AbilitySpecial"
 		{
 			"01"
@@ -6083,7 +6083,7 @@
 		"MaxLevel"	"7"
 		"AbilityCooldown"	"20.0"
 		"AbilityManaCost"	"80 100 120 140 160 180 200"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_FIRE"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_TECH"
 
 		"AbilitySpecial"
 		{
@@ -12317,7 +12317,7 @@
 		"AbilityCastRange"				"1000"
 		"AbilityCastPoint"				"0.3"
 		"AbilityCooldown"				"30"
-		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_FIRE"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_TECH"
 
 
 		"AbilityManaCost"				"125"
@@ -12424,7 +12424,8 @@
 		"AbilityCastPoint"	"0.0"
 		"AbilityCooldown"	"24"
 		"AbilityManaCost"	"120"
-
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_TECH"
+		
 		"AbilitySpecial"
 		{
 			"01"
@@ -21301,7 +21302,7 @@
 		"AbilityCooldown"	"10"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityManaCost"	"160 270 340 390 460 560 660"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_FIRE"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_TECH"
 
 		"AbilitySpecial"
 		{
@@ -21411,7 +21412,7 @@
 		"AbilityCastPoint"	"1.0 1.0 1.0 1.0 1.0 0.8 0.6"
 		"AbilityCooldown"	"35"
 		"AbilityManaCost"	"100 125 150 175 200 225 250"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_FIRE"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_TECH"
 
 		"AbilitySpecial"
 		{
@@ -21457,8 +21458,7 @@
 		"AbilityCastPoint"	"1.0 1.0 1.0 1.0 1.0 0.8 0.6"
 		"AbilityCooldown"	"10.0"
 		"AbilityManaCost"	"200 240 300 380 500 640 760"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_FIRE"
-
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_TECH"
 		"AbilitySpecial"
 		{
 			"01"

@@ -103,11 +103,11 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_FIRE" 	"90"
+			"DAMAGE_SUBTYPE_FIRE" 	"100"
 			"DAMAGE_SUBTYPE_BLOOD" 	"100"
 			"DAMAGE_SUBTYPE_WATER" 	"90"
-			"DAMAGE_SUBTYPE_ENERGY" "-50"
-			"DAMAGE_SUBTYPE_ICE" 	"-50"
+			"DAMAGE_SUBTYPE_ENERGY" "-125"
+			"DAMAGE_SUBTYPE_ICE" 	"-125"
 			"DAMAGE_SUBTYPE_TECH" 	"100"
 		}
 	}
@@ -173,8 +173,8 @@
 		"AttackRate"	"1.7"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_ENERGY"	"75"
-			"DAMAGE_SUBTYPE_AIR"	"75"
+			"DAMAGE_SUBTYPE_ENERGY"	"100"
+			"DAMAGE_SUBTYPE_AIR"	"100"
 			"DAMAGE_SUBTYPE_WATER" 	"-50"
 		}
 	}
@@ -205,10 +205,10 @@
 		"AttributeIntelligenceGain"	"2.0"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_ENERGY" "75"
-			"DAMAGE_SUBTYPE_AIR"  "75"
-			"DAMAGE_SUBTYPE_FIRE" "75"
-			"DAMAGE_SUBTYPE_ICE"  "75"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
+			"DAMAGE_SUBTYPE_AIR"  "90"
+			"DAMAGE_SUBTYPE_FIRE" "90"
+			"DAMAGE_SUBTYPE_ICE"  "100"
 			"DAMAGE_SUBTYPE_BLOOD" "100"
 			"DAMAGE_SUBTYPE_POISON" "100"
 			"DAMAGE_SUBTYPE_EARTH" "-25"
@@ -235,7 +235,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_AIR" 	"50"
-			"DAMAGE_SUBTYPE_WILD" 	"100"
+			"DAMAGE_SUBTYPE_WILD" 	"50"
 		}
 	}
 
@@ -246,6 +246,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_ENERGY" 	"50"
+			"DAMAGE_SUBTYPE_AIR"	 	"50"
 			"DAMAGE_SUBTYPE_WATER" 		"-25"
 		}
 	}
@@ -261,6 +262,8 @@
 		"AttributeIntelligenceGain"	"2.0"
 		"DamgeSubTypeResistance"
 		{
+			"DAMAGE_SUBTYPE_ICE" 	"30"
+			"DAMAGE_SUBTYPE_FIRE" 	"30"
 			"DAMAGE_SUBTYPE_WATER" 	"50"
 			"DAMAGE_SUBTYPE_AIR" 	"50"
 		}
@@ -296,8 +299,9 @@
 		"AttackRate"	"1.6"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_LIGHT" 	"-25"
 			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+			"DAMAGE_SUBTYPE_EARTH" 	"50"
 		}
 	}
 
@@ -305,11 +309,6 @@
 	{
 		"override_hero"	"npc_dota_hero_shadow_shaman"
 		"AttackRate"	"1.6"
-		"DamgeSubTypeResistance"
-		{
-			"DAMAGE_SUBTYPE_LIGHT" 	"-25"
-			"DAMAGE_SUBTYPE_DARK" 	"50"
-		}
 	}
 
 	"npc_dota_hero_slardar"
@@ -378,11 +377,11 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_DARK" 	"50"
-			"DAMAGE_SUBTYPE_LIGHT" 	"-100"
-			"DAMAGE_SUBTYPE_POISON" "50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-75"
+			"DAMAGE_SUBTYPE_POISON" "100"
 			"DAMAGE_SUBTYPE_BLOOD" 	"50"
-			"DAMAGE_SUBTYPE_ICE" 	"50"
-			"DAMAGE_SUBTYPE_FIRE" 	"-50"
+			"DAMAGE_SUBTYPE_ICE" 	"25"
+			"DAMAGE_SUBTYPE_FIRE" 	"-75"
 		}
 	}
 
@@ -438,11 +437,11 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_DARK" 	"50"
-			"DAMAGE_SUBTYPE_LIGHT" 	"-100"
-			"DAMAGE_SUBTYPE_POISON" "50"
-			"DAMAGE_SUBTYPE_BLOOD" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-125"
+			"DAMAGE_SUBTYPE_POISON" "100"
+			"DAMAGE_SUBTYPE_BLOOD" 	"100"
 			"DAMAGE_SUBTYPE_ICE" 	"50"
-			"DAMAGE_SUBTYPE_FIRE" 	"-50"
+			"DAMAGE_SUBTYPE_FIRE" 	"-75"
 		}
 	}
 
@@ -517,6 +516,8 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_FIRE" 		"-25"
+			"DAMAGE_SUBTYPE_TECH" 		"-25"
+			"DAMAGE_SUBTYPE_EARTH"		"75"
 			"DAMAGE_SUBTYPE_WILD"		"100"
 		}
 	}
@@ -528,6 +529,8 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_SPACE" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
 		}
 	}
 
@@ -538,11 +541,12 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_DARK" 	"50"
-			"DAMAGE_SUBTYPE_LIGHT" 	"-100"
-			"DAMAGE_SUBTYPE_POISON" "50"
-			"DAMAGE_SUBTYPE_BLOOD" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-125"
+			"DAMAGE_SUBTYPE_POISON" "100"
+			"DAMAGE_SUBTYPE_BLOOD" 	"100"
 			"DAMAGE_SUBTYPE_ICE" 	"50"
-			"DAMAGE_SUBTYPE_FIRE" 	"-50"
+			"DAMAGE_SUBTYPE_FIRE" 	"100"
+			"DAMAGE_SUBTYPE_WATER" 	"-100"
 		}
 	}
 
@@ -553,6 +557,8 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_FIRE" 		"-25"
+			"DAMAGE_SUBTYPE_TECH" 		"-25"
+			"DAMAGE_SUBTYPE_EARTH"		"75"
 			"DAMAGE_SUBTYPE_WILD"		"100"
 		}
 	}
@@ -563,8 +569,8 @@
 		"AttackRate"	"1.4"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_LIGHT" 	"-75"
-			"DAMAGE_SUBTYPE_DARKNESS" "90"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-40"
+			"DAMAGE_SUBTYPE_DARK" "100"
 		}
 	}
 
@@ -572,6 +578,12 @@
 	{
 		"override_hero"	"npc_dota_hero_broodmother"
 		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_EARTH" 	"50"
+			"DAMAGE_SUBTYPE_POISON"	"50"
+			"DAMAGE_SUBTYPE_FIRE"	"-25"
+		}
 	}
 
 	"npc_dota_hero_bounty_hunter"
@@ -587,6 +599,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_SPACE" "100"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
 		}
 	}
 
@@ -651,7 +664,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_POISON" "50"
-			"DAMAGE_SUBTYPE_WILD" "100"
+			"DAMAGE_SUBTYPE_WILD" "50"
 			"DAMAGE_SUBTYPE_EARTH" "50"
 		}
 	}
@@ -706,7 +719,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_POISON" "50"
-			"DAMAGE_SUBTYPE_WILD" "100"
+			"DAMAGE_SUBTYPE_WILD" "50"
 		}
 	}
 
@@ -746,9 +759,10 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_POISON" "50"
-			"DAMAGE_SUBTYPE_WILD" "100"
-			"DAMAGE_SUBTYPE_EARTH" "50"
+			"DAMAGE_SUBTYPE_FIRE" 		"-25"
+			"DAMAGE_SUBTYPE_TECH" 		"-25"
+			"DAMAGE_SUBTYPE_EARTH"		"75"
+			"DAMAGE_SUBTYPE_WILD"		"100"
 		}
 	}
 
@@ -789,6 +803,8 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_FIRE" 		"-25"
+			"DAMAGE_SUBTYPE_TECH" 		"-25"
+			"DAMAGE_SUBTYPE_EARTH"		"75"
 			"DAMAGE_SUBTYPE_WILD"		"100"
 		}
 	}
@@ -854,6 +870,7 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"50"
 			"DAMAGE_SUBTYPE_DARK" 	"50"
 			"DAMAGE_SUBTYPE_SPACE"	"50"
 		}
@@ -906,6 +923,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_ENERGY"	"50"
+			"DAMAGE_SUBTYPE_EARTH"	"50"
 		}
 	}
 
@@ -916,6 +934,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_TECH" 	"50"
+			"DAMAGE_SUBTYPE_WILD" 	"50"
 		}
 	}
 
@@ -926,6 +945,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_EARTH"	"50"
+			"DAMAGE_SUBTYPE_POISON"	"50"
 		}
 	}
 
@@ -937,6 +957,7 @@
 		{
 			"DAMAGE_SUBTYPE_FIRE" 	"-25"
 			"DAMAGE_SUBTYPE_ICE" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 	"25"
 		}
 	}
 
@@ -946,8 +967,8 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" "50"
-			"DAMAGE_SUBTYPE_AIR" "50"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_AIR" 	"50"
 		}
 	}
 
@@ -961,8 +982,8 @@
 			"DAMAGE_SUBTYPE_LIGHT" 	"-100"
 			"DAMAGE_SUBTYPE_POISON" "50"
 			"DAMAGE_SUBTYPE_BLOOD" 	"50"
-			"DAMAGE_SUBTYPE_ICE" 	"50"
-			"DAMAGE_SUBTYPE_FIRE" 	"-50"
+			"DAMAGE_SUBTYPE_ICE" 	"100"
+			"DAMAGE_SUBTYPE_FIRE" 	"-75"
 		}
 	}
 
@@ -973,6 +994,8 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_SPACE" 	"100"
+			"DAMAGE_SUBTYPE_LIGHT" 	"100"
+			"DAMAGE_SUBTYPE_DARK" 	"100"
 		}
 	}
 
@@ -1005,9 +1028,15 @@
 		"AttackRate"	"1.8"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_WATER" 	"-25"
-			"DAMAGE_SUBTYPE_ENERGY" "50"
-			"DAMAGE_SUBTYPE_EARTH"	"50"
+			"DAMAGE_SUBTYPE_ENERGY" "75"
+			"DAMAGE_SUBTYPE_AIR"  "75"
+			"DAMAGE_SUBTYPE_FIRE" "75"
+			"DAMAGE_SUBTYPE_ICE"  "75"
+			"DAMAGE_SUBTYPE_BLOOD" "100"
+			"DAMAGE_SUBTYPE_POISON" "100"
+			"DAMAGE_SUBTYPE_EARTH" "-25"
+			"DAMAGE_SUBTYPE_WATER" "-25"
+			"DAMAGE_SUBTYPE_TECH" 	"-200"
 		}
 	}
 
@@ -1057,9 +1086,9 @@
 		"AttackRate"	"1.6"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_FIRE" 	"-25"
-			"DAMAGE_SUBTYPE_ICE" 	"50"
-			"DAMAGE_SUBTYPE_WATER" 	"50"
+			"DAMAGE_SUBTYPE_FIRE" 	"-50"
+			"DAMAGE_SUBTYPE_ICE" 	"100"
+			"DAMAGE_SUBTYPE_WATER" 	"75"
 		}
 	}
 
@@ -1080,6 +1109,7 @@
 		"AttackRate"	"1.6"
 		"DamgeSubTypeResistance"
 		{
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
 			"DAMAGE_SUBTYPE_DARK" 	"75"
 			"DAMAGE_SUBTYPE_LIGHT" 	"-25"
 		}
@@ -1114,8 +1144,12 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"90"
-			"DAMAGE_SUBTYPE_SPACE" 	"90"
+			"DAMAGE_SUBTYPE_POISON"	"100"
+			"DAMAGE_SUBTYPE_ICE" 	"100"
+			"DAMAGE_SUBTYPE_BLOOD" 	"100"
+			"DAMAGE_SUBTYPE_LIGHT" 	"100"
+			"DAMAGE_SUBTYPE_DARK" 	"-150"
+			"DAMAGE_SUBTYPE_SPACE" 	"100"
 		}
 	}
 
@@ -1138,6 +1172,7 @@
 		{
 			"DAMAGE_SUBTYPE_FIRE" 	"-25"
 			"DAMAGE_SUBTYPE_ICE" 	"75"
+			"DAMAGE_SUBTYPE_WATER" 	"50"
 		}
 	}
 
