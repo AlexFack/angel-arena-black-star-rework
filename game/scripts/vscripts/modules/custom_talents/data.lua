@@ -402,14 +402,14 @@ CUSTOM_TALENTS_DATA = {
 	},
 	talent_hero_sai_release_of_forge_unlimited_attack_range = {
 		icon = "arena/sai_release_of_forge",
-		cost = 250,
+		cost = 300,
 		group = 10,
 		max_level = 1,
 		requirement = "sai_release_of_forge",
 	},
 	talent_hero_sai_release_of_forge_enemy_heroes_vision = {
 		icon = "arena/sai_release_of_forge",
-		cost = 250,
+		cost = 300,
 		group = 10,
 		max_level = 1,
 		requirement = "sai_release_of_forge",
@@ -518,6 +518,9 @@ NATIVE_TALENTS = {
 	special_bonus_unique_juggernaut_3 = {
 		group = 6,
 	},
+	special_bonus_unique_juggernaut_4 = {
+		group = 1,
+	},
 	special_bonus_unique_winter_wyvern_1 = {
 		group = 9,
 	},
@@ -558,6 +561,9 @@ NATIVE_TALENTS = {
 		group = 2,
 	},
 	special_bonus_unique_medusa_4 = false,
+	special_bonus_unique_medusa_5 = {
+		group = 2,
+	},
 	special_bonus_unique_night_stalker = {
 		group = 7,
 	},
@@ -687,7 +693,12 @@ NATIVE_TALENTS = {
 	special_bonus_unique_storm_spirit_4 = {
 		group = 10,
 	},
-	special_bonus_unique_storm_spirit_5 = false,
+	special_bonus_unique_storm_spirit_5 = {
+		group = 3,
+	},
+	special_bonus_unique_storm_spirit_6 = {
+		group = 12,
+	},
 	special_bonus_unique_tidehunter = {
 		group = 7,
 	},
@@ -860,7 +871,7 @@ NATIVE_TALENTS = {
 		group = 10,
 	},
 	special_bonus_unique_phantom_assassin = {
-		group = 8,
+		group = 2,
 	},
 	special_bonus_unique_phantom_assassin_2 = {
 		group = 10,
@@ -878,18 +889,14 @@ NATIVE_TALENTS = {
 		group = 5,
 	},
 	special_bonus_unique_phantom_lancer_4 = false,
-	special_bonus_unique_riki_1 = {
-		group = 10,
-	},
+	special_bonus_unique_riki_1 = false,
 	special_bonus_unique_riki_2 = {
 		group = 8,
 	},
 	special_bonus_unique_riki_3 = {
 		group = 9,
 	},
-	special_bonus_unique_riki_4 = {
-		group = 11,
-	},
+	special_bonus_unique_riki_4 = false,
 	special_bonus_unique_riki_5 = {
 		group = 12,
 	},
@@ -917,6 +924,9 @@ NATIVE_TALENTS = {
 	},
 	special_bonus_unique_sniper_4 = {
 		group = 10,
+	},
+	special_bonus_unique_sniper_5 = {
+		group = 1,
 	},
 	special_bonus_unique_magnus_2 = {
 		group = 10,
@@ -1068,6 +1078,9 @@ NATIVE_TALENTS = {
 	special_bonus_unique_keeper_of_the_light_3 = {
 		group = 8,
 	},
+	special_bonus_unique_keeper_of_the_light_4 = {
+		group = 4,
+	},
 	special_bonus_unique_legion_commander = {
 		group = 9,
 	},
@@ -1079,6 +1092,9 @@ NATIVE_TALENTS = {
 	},
 	special_bonus_unique_legion_commander_4 = {
 		group = 5,
+	},
+	special_bonus_unique_legion_commander_5 = {
+		group = 10,
 	},
 	special_bonus_unique_puck = {
 		group = 9,
@@ -1585,7 +1601,7 @@ NATIVE_TALENTS = {
 		group = 9,
 	},
 	special_bonus_unique_templar_assassin_4 = {
-		group = 13,
+		group = 12,
 	},
 	special_bonus_unique_templar_assassin_6 = {
 		group = 10,
@@ -1705,6 +1721,9 @@ NATIVE_TALENTS = {
 	special_bonus_unique_kunkka_3 = {
 		group = 10,
 	},
+	special_bonus_unique_kunkka_4 = {
+		group = 4,
+	},
 	special_bonus_unique_invoker_1 = {
 		group = 6,
 	},
@@ -1728,6 +1747,9 @@ NATIVE_TALENTS = {
 	},
 	special_bonus_unique_invoker_8 = {
 		group = 9,
+	},
+	special_bonus_unique_invoker_10 = {
+		group = 1,
 	},
 	special_bonus_unique_gyrocopter_1 = false,
 	special_bonus_unique_gyrocopter_3 = {
@@ -1814,7 +1836,7 @@ NATIVE_TALENTS = {
 		group = 3,
 	},
 	special_bonus_unique_antimage_4 = {
-		group = 15,
+		group = 10,
 	},
 	special_bonus_unique_antimage_5 = {
 		group = 3,
@@ -1830,6 +1852,9 @@ NATIVE_TALENTS = {
 	},
 	special_bonus_unique_faceless_void_4 = {
 		group = 6,
+	},
+	special_bonus_unique_faceless_void_5 = {
+		group = 10,
 	},
 }
 
