@@ -15,7 +15,7 @@
 		"AbilityChannelTime"			"%duration"
 		"AbilityCooldown"				"30 26 24 20 16 15 12"
 		
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_AIR"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_AIR"
 
 		"AbilitySpecial"
 		{
