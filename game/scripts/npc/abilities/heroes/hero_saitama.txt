@@ -206,12 +206,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"loss_stacks_pct"		"40"
+				"loss_stacks_pct"		"25"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"stacks_for_kill"		"3"
+				"stacks_for_kill"		"5"
 			}
 			"04"
 			{
