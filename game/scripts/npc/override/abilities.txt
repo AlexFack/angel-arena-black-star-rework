@@ -5741,7 +5741,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_multiplier"	"0.5 0.5 0.5 0.6 0.8 1.0 1.3"
+				"damage_multiplier"	"0.4 0.5 0.6 0.7 0.8 0.9 1.0"
 				"LinkedSpecialBonus"		"special_bonus_unique_riki_1"
 			}
 
@@ -5771,21 +5771,21 @@
 	{
 		"MaxLevel"	"7"
 		"AbilityCastRange"	"1000"
-		"AbilityCastPoint"	"0.3 0.3 0.3 0.3 0.25 0.2 0.15"
-		"AbilityCooldown"	"50"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"100"
 		"AbilityManaCost"	"100"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"range"	"500"
+				"range"	"400"
 				"LinkedSpecialBonus"		"special_bonus_unique_riki_4"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"attack_rate"				"0.5 0.45 0.4 0.36 0.33 0.3 0.3"
+				"attack_rate"				"0.6"
 			}
 			"03"
 			{
@@ -11791,9 +11791,10 @@
 	{
 		"MaxLevel"	"7"
 		"AbilityCastPoint"	"0.01"
-		"AbilityCooldown"	"40.0"
+		"AbilityCooldown"	"70.0"
 		"AbilityManaCost"	"100 125 150 175 200 225 250"
 		"AbilityDamage"		"250 350 450 550 650 750 850"
+		"LevelsBetweenUpgrades"	"18"
 		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_ICE"
 
 		"AbilitySpecial"
@@ -11825,7 +11826,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"frostbite_duration"	"7.0 7.5 8.0 8.5 9.0 9.5 10.0"
+				"frostbite_duration"	"9.0 10.0 11.0 12.0 13.0 14.0 15.0"
 			}
 
 			"06"
@@ -11856,12 +11857,12 @@
 			"10"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"frostbite_duration_scepter"	"15"
+				"frostbite_duration_scepter"	"25"
 			}
 			"99"
 			{
 				"var_type" "FIELD_FLOAT"
-				"damage_from_current_health_pct" "1.0"
+				"damage_from_current_health_pct" "0.5"
 				"CalculateSpellDamageTooltip" "0"
 			}
 
