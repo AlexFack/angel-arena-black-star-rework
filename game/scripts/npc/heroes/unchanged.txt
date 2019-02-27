@@ -198,10 +198,10 @@
 	"npc_dota_hero_tiny"
 	{
 		"override_hero"	"npc_dota_hero_tiny"
-		"AttackRate"	"1.8"
+		"AttackRate"	"2.0"
 		"ArmorPhysical"	"10"
-		"AttributeStrengthGain"	"4.0"
-		"MovementSpeed"	"300"
+		"AttributeStrengthGain"	"3.0"
+		"MovementSpeed"	"280"
 		"AttributeIntelligenceGain"	"2.0"
 		"AttackDamageMin"		"30"
 		"AttackDamageMax"		"35"
