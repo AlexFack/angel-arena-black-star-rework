@@ -138,7 +138,7 @@ function GameMode:ExecuteOrderFilter(filterTable)
 end
 
 function GameMode:DamageFilter(filterTable)
-	for i in pairs(filterTable) do print(i) end
+	--for i in pairs(filterTable) do print(i) end
 	local damagetype_const = filterTable.damagetype_const
 	local damage = filterTable.damage
 	local inflictor
