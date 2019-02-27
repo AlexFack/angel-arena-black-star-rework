@@ -133,10 +133,12 @@ if IsServer() then
 	end
 
 	function modifier_item_scythe_of_the_ancients_passive:OnTakeDamage(keys)
+		--for i in pairs(keys) do print(i) end
 		local parent = self:GetParent()
 		local damage = keys.original_damage
+		if not keys.damage_flags == DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION then damage = damage * (1 + parent:GetSpellAmplification(false)) end
 		local ability = self:GetAbility()
-		if keys.attacker == parent and not keys.unit:IsMagicImmune() and keys.damage_type == 2 and not (keys.inflictor and keys.inflictor:GetAbilityName() == "batrider_sticky_napalm") then
+		if keys.attacker == parent and keys.damage_type == 2 and not (keys.inflictor and keys.inflictor:GetAbilityName() == "batrider_sticky_napalm") then
 			ability.originalInflictor = keys.inflictor
 			ApplyDamage({
 				attacker = parent,
@@ -196,5 +198,6 @@ function modifier_item_scythe_of_the_ancients_stun:CheckState()
 	return {
 		[ MODIFIER_STATE_STUNNED ] = true,
 		[ MODIFIER_STATE_PROVIDES_VISION ] = true,
+		[ MODIFIER_STATE_PASSIVES_DISABLED] = true
 	}
 end
