@@ -8792,7 +8792,7 @@
 		"AbilityCooldown"	"18 17 16 15 14 13 12"
 		"AbilityManaCost"	"50"
 		"AbilityDamage"		"80 120 160 200 260 320 380"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_FIRE"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_TECH"
 
 		"AbilitySpecial"
 		{
