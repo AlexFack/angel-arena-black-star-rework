@@ -7,11 +7,11 @@
 		"AttackRate"			"1.6"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_POISON" "10"
 			"DAMAGE_SUBTYPE_TECH" "50"
 			"DAMAGE_SUBTYPE_WATER" "-10"
 			"DAMAGE_SUBTYPE_ENERGY" "-10"
 			"DAMAGE_SUBTYPE_FIRE" "-10"
+		}
 	}
 
 	"npc_dota_hero_life_stealer"
@@ -40,10 +40,11 @@
 		"AttributeAgilityGain"	"2.0"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_POISON" "10"
-			"DAMAGE_SUBTYPE_TECH" "50"
-			"DAMAGE_SUBTYPE_WATER" "-10"
-			"DAMAGE_SUBTYPE_ENERGY" "-10"
+			"DAMAGE_SUBTYPE_POISON" "20"
+			"DAMAGE_SUBTYPE_AIR" "25"
+			"DAMAGE_SUBTYPE_TECH" "30"
+			"DAMAGE_SUBTYPE_WATER" "-5"
+			"DAMAGE_SUBTYPE_ENERGY" "-15"
 			"DAMAGE_SUBTYPE_FIRE" "-10"
 		}
 	}
