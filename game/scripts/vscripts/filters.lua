@@ -138,6 +138,7 @@ function GameMode:ExecuteOrderFilter(filterTable)
 end
 
 function GameMode:DamageFilter(filterTable)
+	for i in pairs(filterTable) do print(i) end
 	local damagetype_const = filterTable.damagetype_const
 	local damage = filterTable.damage
 	local inflictor
@@ -161,12 +162,15 @@ function GameMode:DamageFilter(filterTable)
 					damage_from_current_health_pct = damage_from_current_health_pct * PERCENT_DAMAGE_MODIFIERS[inflictorname]
 				end
 
+				local damage_pct = victim:GetHealth() * damage_from_current_health_pct * 0.01
+				if filterTable.damagetype_const == DAMAGE_TYPE_MAGICAL then damage_pct = damage_pct - damage_pct * victim:GetMagicalArmorValue() end
+
 				local subtype = inflictor:GetKeyValue("AbilityUnitDamageSubType")
 				local resist = victim:GetKeyValue("DamgeSubTypeResistance")
 				if subtype and resist and resist[subtype] then
-					filterTable.damage = filterTable.damage + DamageSubtypes(inflictor, victim, victim:GetHealth() * damage_from_current_health_pct * 0.01)
+					filterTable.damage = filterTable.damage + DamageSubtypes(inflictor, victim, damage_pct)
 				else
-					filterTable.damage = filterTable.damage + (victim:GetHealth() * damage_from_current_health_pct * 0.01)
+					filterTable.damage = filterTable.damage + damage_pct
 				end
 			end
 
@@ -296,10 +300,9 @@ end
 function DamageSubtypes(inflictor, victim, damage)
 	if inflictor and inflictor:GetKeyValue("AbilityUnitDamageSubType") then
 		local subtype = inflictor:GetKeyValue("AbilityUnitDamageSubType")
-
 		if victim and victim:GetKeyValue("DamgeSubTypeResistance") then
 			local resist = victim:GetKeyValue("DamgeSubTypeResistance")
-			if resist[subtype] then
+			if resist[subtype] and not victim:IsHexed() then
 				if resist[subtype] > 100 then resist[subtype] = 100 end
 				damage = damage - damage * resist[subtype] * 0.01
 			elseif subtype == "DAMAGE_SUBTYPE_POISON" then
@@ -309,6 +312,12 @@ function DamageSubtypes(inflictor, victim, damage)
 				resist[subtype] = -25
 				damage = damage - damage * resist[subtype] * 0.01
 			end
+		elseif victim and subtype == "DAMAGE_SUBTYPE_POISON" then
+			resist[subtype] = -25
+			damage = damage - damage * resist[subtype] * 0.01
+		elseif victim and subtype == "DAMAGE_SUBTYPE_SPACE" then
+			resist[subtype] = -25
+			damage = damage - damage * resist[subtype] * 0.01
 		end
 	end
 	
