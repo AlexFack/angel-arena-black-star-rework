@@ -109,6 +109,7 @@
 			"DAMAGE_SUBTYPE_ENERGY" "-125"
 			"DAMAGE_SUBTYPE_ICE" 	"-125"
 			"DAMAGE_SUBTYPE_TECH" 	"100"
+			"DAMAGE_SUBTYPE_WATER" 	"100"
 		}
 	}
 
@@ -303,6 +304,7 @@
 			"DAMAGE_SUBTYPE_DARK" 	"50"
 			"DAMAGE_SUBTYPE_FIRE" 	"50"
 			"DAMAGE_SUBTYPE_EARTH" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 	"-30"
 		}
 	}
 
@@ -495,6 +497,9 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_TECH" "50"
+			"DAMAGE_SUBTYPE_WATER" "-10"
+			"DAMAGE_SUBTYPE_ENERGY" "-10"
+			"DAMAGE_SUBTYPE_FIRE" "-10"
 		}
 	}
 
@@ -938,7 +943,10 @@
 		"AttackRate"	"1.6"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_TECH" 	"50"
+			"DAMAGE_SUBTYPE_TECH" "50"
+			"DAMAGE_SUBTYPE_WATER" "-20"
+			"DAMAGE_SUBTYPE_ENERGY" "-10"
+			"DAMAGE_SUBTYPE_FIRE" "-20"
 			"DAMAGE_SUBTYPE_WILD" 	"50"
 		}
 	}
@@ -1087,7 +1095,10 @@
 		"AttackRate"	"1.4"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_TECH" 	"50"
+			"DAMAGE_SUBTYPE_TECH" "50"
+			"DAMAGE_SUBTYPE_WATER" "-10"
+			"DAMAGE_SUBTYPE_ENERGY" "-10"
+			"DAMAGE_SUBTYPE_FIRE" "-10"
 		}
 	}
 
