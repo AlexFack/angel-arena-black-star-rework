@@ -8401,13 +8401,13 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"damage_pct"					"4.5"
+				"damage_pct"					"4"
 				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"08"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"intelligence_damage_pct"		"9"
+				"intelligence_damage_pct"		"8"
 				"CalculateSpellDamageTooltip" 	"0"
 			}
 			"09"
