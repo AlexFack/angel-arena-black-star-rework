@@ -144,6 +144,8 @@
 		"AbilityCooldown"				"10 9 8 6 5 4 3"
 		"AbilityManaCost"				"70"
 		"AOERadius"						"%radius"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_SPACE"
+
 
 		"AbilitySpecial"
 		{
