@@ -470,7 +470,7 @@
 		"AbilityCastPoint"	"0.3 0.3 0.3 0.3 0.3 0.2 0.1"
 		"AbilityCooldown"	"18 17 16 15 14 13 12"
 		"AbilityManaCost"	"100"
-		"AbilityUnitDamageSubType" "DAMAGE_SUBTYPE_BLOOD"
+		"AbilityUnitDamageSubType" "DAMAGE_SUBTYPE_DARK"
 		"AbilitySpecial"
 		{
 			"01"
@@ -6308,7 +6308,7 @@
 		"AbilityCooldown"	"20 18 16 14 12 11 10"
 		"AbilityDamage"		"320 485 650 815 980 1145 1310"
 		"AbilityManaCost"	"175 275 375 475 575 675 775"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_FIRE"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_TECH"
 
 		"AbilitySpecial"
 		{
@@ -6390,6 +6390,7 @@
 	{
 		"MaxLevel"	"7"
 		"AbilityCastRange"	"700"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_POISON"
 		"AbilitySpecial"
 		{
 			"01"
@@ -16982,7 +16983,6 @@
 	{
 		"MaxLevel"	"7"
 		"LevelsBetweenUpgrades" "3"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_WATER"
 		"AbilitySpecial"
 		{
 			"01"
