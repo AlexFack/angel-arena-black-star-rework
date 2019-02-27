@@ -497,8 +497,7 @@
 
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"25"
-			"DAMAGE_SUBTYPE_LIGHT" 	"-5"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
 		}
 	}
 
