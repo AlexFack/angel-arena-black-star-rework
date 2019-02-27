@@ -90,7 +90,7 @@ if IsServer() then
 		self.LostHealth = self:GetAbility():GetSpecialValueFor("self_damage_pct") * caster:GetHealth() * 0.01
 		caster:Purge(false, true, false, true, false)
 		caster:SetAttackCapability(DOTA_UNIT_CAP_RANGED_ATTACK)
-		caster:SetRangedProjectileName("particles/units/heroes/hero_jakiro/jakiro_base_attack.vpcf")
+		caster:SetRangedProjectileName("particles/base_attacks/ranged_tower_bad.vpcf")
 		--caster:ChangeTrackingProjectileSpeed(self:GetAbilit(), 3000)
 	end
 
