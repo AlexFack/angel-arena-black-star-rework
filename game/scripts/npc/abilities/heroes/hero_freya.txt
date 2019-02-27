@@ -24,7 +24,7 @@
 		"AbilityManaCost"				"100 150 200 250 300 350 400"
 		"AOERadius"						"%radius"
 		
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_ICE"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ICE"
 
 		"AbilitySpecial"
 		{
@@ -159,6 +159,9 @@
 		"AbilityCooldown"				"22"
 
 		"AbilityManaCost"				"115 125 140 150 160 170 180"
+
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ICE"
+
 
 
 		// Special
