@@ -13,7 +13,7 @@
 		"AbilityCastPoint"				"0.15"
 		"MaxLevel"						"7"
 		
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_ENERGY"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
 
 		"AbilitySpecial"
 		{
