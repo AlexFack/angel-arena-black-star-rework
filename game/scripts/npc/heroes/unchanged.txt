@@ -198,11 +198,12 @@
 	{
 		"override_hero"	"npc_dota_hero_tiny"
 		"AttackRate"	"1.8"
-		"ArmorPhysical"	"0"
-		"AttributeStrengthGain"	"2.8"
-		"AttributeAgilityGain"	"2.1"
+		"ArmorPhysical"	"10"
+		"AttributeStrengthGain"	"4.0"
 		"MovementSpeed"	"300"
 		"AttributeIntelligenceGain"	"2.0"
+		"AttackDamageMin"		"30"
+		"AttackDamageMax"		"35"
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_ENERGY" "90"
@@ -211,9 +212,9 @@
 			"DAMAGE_SUBTYPE_ICE"  "100"
 			"DAMAGE_SUBTYPE_BLOOD" "100"
 			"DAMAGE_SUBTYPE_POISON" "100"
-			"DAMAGE_SUBTYPE_EARTH" "-50"
-			"DAMAGE_SUBTYPE_WATER" "-50"
-			"DAMAGE_SUBTYPE_TECH" 	"-200"
+			"DAMAGE_SUBTYPE_EARTH" "-40"
+			"DAMAGE_SUBTYPE_WATER" "-40"
+			"DAMAGE_SUBTYPE_TECH" 	"-150"
 		}
 	}
 
