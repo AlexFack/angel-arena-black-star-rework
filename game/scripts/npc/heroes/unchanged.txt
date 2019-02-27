@@ -134,7 +134,7 @@
 		"AttributeIntelligenceGain"	"2.0"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_ENERGY" "50"
+			"DAMAGE_SUBTYPE_ENERGY" "100"
 			"DAMAGE_SUBTYPE_WATER" 	"-25"
 		}
 	}
@@ -205,14 +205,14 @@
 		"AttributeIntelligenceGain"	"2.0"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_ENERGY" "50"
+			"DAMAGE_SUBTYPE_ENERGY" "90"
 			"DAMAGE_SUBTYPE_AIR"  "90"
 			"DAMAGE_SUBTYPE_FIRE" "90"
 			"DAMAGE_SUBTYPE_ICE"  "100"
 			"DAMAGE_SUBTYPE_BLOOD" "100"
 			"DAMAGE_SUBTYPE_POISON" "100"
-			"DAMAGE_SUBTYPE_EARTH" "-25"
-			"DAMAGE_SUBTYPE_WATER" "-25"
+			"DAMAGE_SUBTYPE_EARTH" "-50"
+			"DAMAGE_SUBTYPE_WATER" "-50"
 			"DAMAGE_SUBTYPE_TECH" 	"-200"
 		}
 	}
@@ -245,7 +245,7 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_ENERGY" 	"50"
+			"DAMAGE_SUBTYPE_ENERGY" 	"100"
 			"DAMAGE_SUBTYPE_AIR"	 	"50"
 			"DAMAGE_SUBTYPE_WATER" 		"-25"
 		}
@@ -504,7 +504,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_EARTH" 	"50"
-			"DAMAGE_SUBTYPE_ENERGY" "90"
+			"DAMAGE_SUBTYPE_ENERGY" "100"
 			"DAMAGE_SUBTYPE_WATER" 	"-50"
 		}
 	}
@@ -1044,11 +1044,17 @@
 	{
 		"override_hero"	"npc_dota_hero_terrorblade"
 		"AttackRate"	"1.6"
-		"AttributeAgilityGain"	"2.5"
+		"AttributeAgilityGain"	"4.8"
+		"AttributeStrengthGain"	"2.1"
+		"AttributeBaseStrength"	"21"
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_LIGHT" 	"50"
 			"DAMAGE_SUBTYPE_DARK"	"50"
+			"DAMAGE_SUBTYPE_WATER"	"50"
+			"DAMAGE_SUBTYPE_FIRE"	"50"
+			"DAMAGE_SUBTYPE_POISON"	"50"
+			"DAMAGE_SUBTYPE_ENERGY"	"50"
 		}
 	}
 
