@@ -6,5 +6,6 @@ weather_blizzard: Метель
 
 DOTA_Tooltip_modifier_weather_blizzard_debuff: Метель
 DOTA_Tooltip_modifier_weather_blizzard_debuff_Description: Не может ни двигаться, ни атаковать в течении %fMODIFIER_PROPERTY_TOOLTIP% сек.
+DOTA_Tooltip_modifier_weather_blizzard_debuff_heal_disable_Description: Не может исцеляться в течении %fMODIFIER_PROPERTY_TOOLTIP% сек.
 DOTA_Tooltip_modifier_weather_storm_debuff: Шторм
 DOTA_Tooltip_modifier_weather_storm_debuff_Description: Оглушен.

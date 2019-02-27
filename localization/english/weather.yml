@@ -7,5 +7,6 @@ weather_blizzard: Blizzard
 
 DOTA_Tooltip_modifier_weather_blizzard_debuff: Blizzard
 DOTA_Tooltip_modifier_weather_blizzard_debuff_Description: Cannot move or attack for %fMODIFIER_PROPERTY_TOOLTIP%s.
+DOTA_Tooltip_modifier_weather_blizzard_debuff_heal_disable_Description: Can't healed for %fMODIFIER_PROPERTY_TOOLTIP%s.
 DOTA_Tooltip_modifier_weather_storm_debuff: Storm
 DOTA_Tooltip_modifier_weather_storm_debuff_Description: Stunned.
