@@ -306,18 +306,14 @@ function DamageSubtypes(inflictor, victim, damage)
 				if resist[subtype] > 100 then resist[subtype] = 100 end
 				damage = damage - damage * resist[subtype] * 0.01
 			elseif subtype == "DAMAGE_SUBTYPE_POISON" then
-				resist[subtype] = -25
-				damage = damage - damage * resist[subtype] * 0.01
+				damage = damage - damage * -25 * 0.01
 			elseif subtype == "DAMAGE_SUBTYPE_SPACE" then
-				resist[subtype] = -25
-				damage = damage - damage * resist[subtype] * 0.01
+				damage = damage - damage * -25 * 0.01
 			end
 		elseif victim and subtype == "DAMAGE_SUBTYPE_POISON" then
-			resist[subtype] = -25
-			damage = damage - damage * resist[subtype] * 0.01
+			damage = damage - damage * -25 * 0.01
 		elseif victim and subtype == "DAMAGE_SUBTYPE_SPACE" then
-			resist[subtype] = -25
-			damage = damage - damage * resist[subtype] * 0.01
+			damage = damage - damage * -25 * 0.01
 		end
 	end
 	
