@@ -3569,7 +3569,7 @@
 		"ItemResult"					"item_vermillion_robe"
 		"ItemRequirements"
 		{
-			"01"						"item_soul_booster;item_pers;item_tranquil_boots;item_cloak;item_moon_dust"
+			"01"						"item_soul_booster;item_pers;item_tranquil_boots;item_cloak"
 		}
 	}
 
@@ -8201,12 +8201,12 @@
 			"13"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"cast_damage"				"2000"
+				"cast_damage"				"1000"
 			}
 			"14"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"cast_damage_pct"			"7.5"
+				"cast_damage_pct"			"3.5"
 			}
 			"15"
 			{
