@@ -185,7 +185,7 @@
 		"AbilityChannelTime"			"1.1"
 		"AbilityCooldown"				"100 95 90 85 80 75 70"
 		"HasScepterUpgrade"				"1"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_ENERGY"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_LIGHT"
 		
 		"AbilitySpecial"
 		{
