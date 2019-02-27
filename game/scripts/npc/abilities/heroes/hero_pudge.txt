@@ -15,6 +15,7 @@
 		"AbilityCooldown"				"14.0 13.5 13.0 12.5 12.0 11.5 11.0"
 		"AbilityManaCost"				"120 150 180 220 240 280 320"
 		"AbilityDamage"					"90 140 190 240 290 340 390"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_BLOOD"
 
 		// Precache
 		//-------------------------------------------------------------------------------------------------------------
@@ -87,7 +88,7 @@
 		"AbilityCastAnimation"			"ACT_DOTA_CHANNEL_ABILITY_2"
 		"AbilityCastRange"				"%rot_radius"
 
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_EARTH"
+		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_POISON"
 
 		"precache"
 		{
@@ -368,7 +369,7 @@
 		"AbilityCooldown"				"32 30 28 26 24 22 20"
 		"AbilityManaCost"				"100 130 170 200 230 270 300"
 
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_EARTH"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_BLOOD"
 
 		"AbilitySpecial"
 		{
