@@ -118,7 +118,7 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_DARK" 	"-25"
 			"DAMAGE_SUBTYPE_DARK" 	"50"
 		}
 	}
@@ -871,7 +871,7 @@
 		"DamgeSubTypeResistance"
 		{
 			"DAMAGE_SUBTYPE_LIGHT" 	"50"
-			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_DARK" 	"-25"
 			"DAMAGE_SUBTYPE_SPACE"	"50"
 		}
 	}
@@ -882,8 +882,12 @@
 		"AttackRate"	"1.8"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_LIGHT" 	"50"
 			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-100"
+			"DAMAGE_SUBTYPE_POISON" "100"
+			"DAMAGE_SUBTYPE_BLOOD" 	"100"
+			"DAMAGE_SUBTYPE_ICE" 	"100"
+			"DAMAGE_SUBTYPE_FIRE" 	"-100"
 		}
 	}
 
@@ -967,7 +971,7 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"50"
+			"DAMAGE_SUBTYPE_DARK" 	"-25"
 			"DAMAGE_SUBTYPE_AIR" 	"50"
 		}
 	}
@@ -1139,8 +1143,8 @@
 		"AttackRate"	"1.3"
 		"DamgeSubTypeResistance"
 		{
-			"DAMAGE_SUBTYPE_DARK" 	"-25"
-			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+			"DAMAGE_SUBTYPE_LIGHT" 	"-25"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
 		}
 	}
 
@@ -1150,12 +1154,20 @@
 		"AttackRate"	"1.5"
 		"DamgeSubTypeResistance"
 		{
+			"DAMAGE_SUBTYPE_LIGHT"	"100"
+			"DAMAGE_SUBTYPE_DARK"	"-300"
+			"DAMAGE_SUBTYPE_EARTH"	"75"
+			"DAMAGE_SUBTYPE_ICE"	"100"
+			"DAMAGE_SUBTYPE_FIRE"	"75"
+			"DAMAGE_SUBTYPE_WATER"	"75"
+			"DAMAGE_SUBTYPE_ENERGY"	"-300"
+			"DAMAGE_SUBTYPE_SPACE"	"75"
+			"DAMAGE_SUBTYPE_BLOOD"	"100"
+			"DAMAGE_SUBTYPE_SOUND"	"100"
 			"DAMAGE_SUBTYPE_POISON"	"100"
-			"DAMAGE_SUBTYPE_ICE" 	"100"
-			"DAMAGE_SUBTYPE_BLOOD" 	"100"
-			"DAMAGE_SUBTYPE_LIGHT" 	"100"
-			"DAMAGE_SUBTYPE_DARK" 	"-150"
-			"DAMAGE_SUBTYPE_SPACE" 	"100"
+			"DAMAGE_SUBTYPE_AIR"	"90"
+			"DAMAGE_SUBTYPE_WILD"	"80"
+			"DAMAGE_SUBTYPE_TECH"	"100"
 		}
 	}
 
